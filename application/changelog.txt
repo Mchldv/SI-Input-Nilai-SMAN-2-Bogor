@@ -1,0 +1,94 @@
+==========
+26-04-2016
+==========
+
+Changed:
+[@] Tweaked the database.php (god have mercy with the 'dbprefix')
+
+Added:
+[+] application/models/Guru_Model.php
+
+ 	[+] __construct()
+	Basic. Calls the parent constructor
+
+	[+] get_all()
+	Gets all information from table 'guru'. Returns the generic form of executed query. Further processing is needed, e.g. $var->result()
+
+	[+] search_by_name ($name)
+	Gets all information from table 'guru' with column name 'nama' = $name. Returns the generic form of executed query. Further processing is needed
+
+	[+] search_by_id ($nik)
+	Gets all information from table 'guru' with column name 'nik' = $nik. Returns the generic form of executed query. Further processing is needed
+
+	[+] insert()
+	Inserts new record into table 'guru'. Uses $_POST. Further explanation can be found in the file
+
+	[+] update()
+	Changes a record's value into another. Uses $_POST. Further explanation can be found in the file
+
+	[+] delete ($nik)
+	Deletes a record with the 'nik'-s value is $nik
+
+[+] application/models/Kelas_Model.php
+
+	[+] __construct()
+	Basic. Calls the parent constructor
+
+	[+] get_all()
+	Gets all information from table 'kelas'. Returns the generic form of executed query. Further processing is needed, e.g. using $var->result()
+
+	[+] insert()
+	Inserts new record into table 'kelas'. Uses $_POST. Further explanation can be found in the file
+
+	[+] update()
+	Changes a record's value into another. Uses $_POST. Further explanation can be found in the file
+
+	[+] delete ($id)
+	Deletes a record with the 'id'-s value is $id
+
+==========
+27-04-2016
+==========
+
+Changed:
+[@] Changes how the model manages record's value into using array
+[@] Minor commenting at application/models/Kelas_Model.php
+[@] Fixed names. Should be consistent with the convention used now (Snake_Camel_Case), also clearer context are given
+
+Added:
+[+] application/models/Mapel_Model.php
+
+	[+] __construct()
+	Basic. Calls the parent constructor
+
+	[+] get_all()
+	Gets all information from table 'kelas'. Returns the generic form of executed query. Further processing is needed, e.g. using $var->result()
+
+	[+] insert()
+	Inserts new record into table 'kelas'. Uses $_POST. Further explanation can be found in the file
+
+	[+] update()
+	Changes a record's value into another. Uses $_POST. Further explanation can be found in the file
+
+	[+] delete ($kode_mapel)
+	Deletes a record with the 'kode_mapel'-s value is $kode_mapel
+
+[+] application/models/Penilaian_Model.php
+
+	[+] __construct()
+	Basic. Calls the parent constructor
+
+	[+] get_all()
+	Gets all information from table 'kelas'. Returns the generic form of executed query. Further processing is needed, e.g. using $var->result()
+
+	[+] insert()
+	Inserts new record into table 'nilai'. Uses $_POST. Further explanation can be found in the file
+
+	[+] update_field ()
+	Changes a record's value into another. Only change non-key fields. Uses $_POST. Further explanation can be found in the file
+
+	[+] update_key ()
+	Changes a record's value into another. Only change key fields. Uses $_POST. Further explanation can be found in the file
+
+	[+] delete ($nisn, $kode_mapel)
+	Deletes a record with the 'nisn'-s value is $nisn, and 'kode_mapel'-s value is $kode_mapel
