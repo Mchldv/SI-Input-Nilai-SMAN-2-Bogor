@@ -92,3 +92,20 @@ Added:
 
 	[+] delete ($nisn, $kode_mapel)
 	Deletes a record with the 'nisn'-s value is $nisn, and 'kode_mapel'-s value is $kode_mapel
+
+[+] application/models/Siswa_Model.php
+
+	[+] __construct()
+	Basic. Calls the parent constructor
+
+	[+] get_all()
+	Gets all information from table 'kelas'. Returns the generic form of executed query. Further processing is needed, e.g. using $var->result()
+
+	[+] insert()
+	Inserts new record into table 'siswa'. Uses $_POST. Further explanation can be found in the file
+
+	[+] update()
+	Changes a record's value into another. Uses $_POST. Further explanation can be found in the file
+
+	[+] delete ($nisn)
+	Deletes a record with the 'nisn'-s value is $nisn
