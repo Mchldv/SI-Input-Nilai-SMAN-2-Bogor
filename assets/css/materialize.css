@@ -406,7 +406,7 @@ ul {
 }
 
 a {
-  color: #039be5;
+  color: #ffffff;
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
 }
@@ -5148,7 +5148,7 @@ nav .button-collapse i {
 
 nav .brand-logo {
   position: absolute;
-  color: #fff;
+  color: #000000;
   display: inline-block;
   font-size: 2.1rem;
   padding: 0;
@@ -5203,7 +5203,7 @@ nav ul li.active {
 nav ul a {
   transition: background-color .3s;
   font-size: 1rem;
-  color: #fff;
+  color: #000000;
   display: block;
   padding: 0 15px;
   cursor: pointer;

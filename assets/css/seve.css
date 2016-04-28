@@ -70,11 +70,11 @@ nav {
 
 .btn, .btn:link, .btn:visited {
 	height: 2.5em;
-	background-color: #e45d25;
+	background-color: #000000;
 	box-shadow: none;
 	border-style: solid;
 	border-width: 2px;
-	border-color: #e45d25;
+	border-color: #000000;
 	font-weight: bold;
 	transition: 0.2s;
 }
@@ -85,9 +85,9 @@ nav {
 	border-style: solid;
 	border-width: 2px;
 	//border-color: #00a9d3;
-	border-color: #e45d25;
+	border-color: #000000;
 	color: #00a9d3;
-	color: #e45d25;
+	color: #000000;
 	font-weight: bold;
 	transition: 0.2s;
 }

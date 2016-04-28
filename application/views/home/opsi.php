@@ -67,19 +67,27 @@
     
 <body>
     <div class="navbar-prelaunch">
-        <h5 style="color:#ffffff"><b>selamat datang!</b></h5>
+        <h5 style="color:#ffffff"><b>pilih opsi</b></h5>
     </div>
     
     <div class="parallax-container fullpage">
         <div class="parallax"><img src="<?php echo base_url();?>assets/img/parallax1_1.png"></div>
         <div class="container paddedrow row">
-            <h1><b>sistem informasi</b></h1>
-            
-            <h5>SMA NEGERI 2 BOGOR</h5>
-        
             <div class="col m4 offset-m4 s12">
                 <div class="textbox">
-                    <a href="<?php echo base_url();?>home/opsi">silahkan masuk</a>
+                    <a href="<?php echo base_url();?>penilaian/lihat">Penilaian</a>
+                </div>
+                <div class="textbox">
+                    <a>Kelas</a>
+                </div>
+                <div class="textbox">
+                    <a>Mata Pelajaran</a>
+                </div>
+                <div class="textbox">
+                    <a>Siswa</a>
+                </div>
+                <div class="textbox">
+                    <a>Guru</a>
                 </div>
             </div>
         </div>
