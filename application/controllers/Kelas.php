@@ -16,7 +16,10 @@ class Kelas extends CI_Controller {
 	}
     public function cetak()
 	{
-		$this->load->view('');
+		$this->load->view('header/header');
+        $this->load->view('navbar/navbar');
+        $this->load->view('kelas/cetakkelas');
+        $this->load->view('footer/footer');
 	}
     public function hapus()
 	{

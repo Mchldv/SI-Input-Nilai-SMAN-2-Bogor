@@ -1,0 +1,1 @@
+// list semua mata pelajaran, kalo diklik

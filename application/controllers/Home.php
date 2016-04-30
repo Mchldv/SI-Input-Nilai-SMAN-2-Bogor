@@ -10,5 +10,9 @@ class Home extends CI_Controller {
 	{
         $this->load->view('home/opsi');
 	}
+    public function opsimatpel()
+	{
+        $this->load->view('penilaian/opsimatpel');
+	}
 
 }

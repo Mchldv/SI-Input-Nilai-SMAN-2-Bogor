@@ -46,10 +46,10 @@
             //border-radius: 10px;
         }
         .fullpage {
-            min-height: 42em;
+            min-height: 44em;
         }
         .fullabsolutepage {
-            height: 42em;
+            height: 44em;
         }
         .seveblue {
             background-color: #003a75;
@@ -67,19 +67,27 @@
     
 <body>
     <div class="navbar-prelaunch">
-        <h5 style="color:#ffffff"><b>selamat datang!</b></h5>
+        <h5 style="color:#ffffff"><b>pilih mata pelajaran</b></h5>
     </div>
     
     <div class="parallax-container fullpage">
         <div class="parallax"><img src="<?php echo base_url();?>assets/img/parallax1_1.png"></div>
         <div class="container paddedrow row">
-            <h1><b>sistem informasi</b></h1>
-            
-            <h5>SMA NEGERI 2 BOGOR</h5>
-        
             <div class="col m4 offset-m4 s12">
                 <div class="textbox">
-                    <a href="<?php echo base_url();?>home/opsi">silahkan masuk</a>
+                    <a href="<?php echo base_url();?>penilaian/lihat">Matematika</a>
+                </div>
+                <div class="textbox">
+                    <a>Fisika</a>
+                </div>
+                <div class="textbox">
+                    <a>Geografi</a>
+                </div>
+                <div class="textbox">
+                    <a>Ekonomi</a>
+                </div>
+                <div class="textbox">
+                    <a>Kimia</a>
                 </div>
             </div>
         </div>
@@ -95,7 +103,6 @@
         $('.parallax').parallax();
         });
     </script>
-    
 </body>
     
 </html>

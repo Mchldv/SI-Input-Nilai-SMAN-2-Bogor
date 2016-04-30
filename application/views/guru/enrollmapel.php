@@ -1,0 +1,1 @@
+//guru ini ngajar matpel apa aja
