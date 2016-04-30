@@ -81,10 +81,10 @@
                     <a href="<?php echo base_url();?>kelas/cetak">Kelas</a>
                 </div>
                 <div class="textbox">
-                    <a>Mata Pelajaran</a>
+                    <a href="<?php echo base_url();?>mapel/cetak">Mata Pelajaran</a>
                 </div>
                 <div class="textbox">
-                    <a>Siswa</a>
+                    <a href="<?php echo base_url();?>siswa/cetak">Siswa</a>
                 </div>
                 <div class="textbox">
                     <a href="<?php echo base_url();?>guru/cetak">Guru</a>
