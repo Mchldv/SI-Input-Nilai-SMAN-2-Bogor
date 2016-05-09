@@ -7,6 +7,7 @@ class Kelas_Model extends CI_Model {
 	public function __construct()
 	{
 		parent::__construct();
+		$this->load->database();
 	}
 
 	public function get_all()
@@ -15,7 +16,19 @@ class Kelas_Model extends CI_Model {
 
 		$query = $this->db->get('kelas');
 
-		return $query;
+		return $query->result();
+	}
+
+	/*	Uses view instead of table. The view has the name of
+	 *	'wali kelas' instead of his/her NIK
+	 */
+	public function get_readable_all()
+	{
+		$this->db->reconnect();
+
+		$query = $this->db->get('readable_kelas');
+
+		return $query->result();
 	}
 
 	/*	Uses $_POST:

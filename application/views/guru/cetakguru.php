@@ -14,30 +14,16 @@
         </thead>
 
         <tbody>
+          <?php foreach ($guru as $item) { ?>
           <tr>
-            <td>Nanik Sucipto</td>
+            <td><?php echo $item->nama; ?></td>
             <td>69217319371</td>
-            <td>11102221001</td>
+            <td><?php echo $item->nik; ?></td>
             <td>199201910210</td>
             <td>S1</td>
             <td><button class="modal-trigger" href="#loginmodal">Detil</button></td>
           </tr>
-          <tr>
-            <td>Similikiti Haribut</td>
-            <td>69217319371</td>
-            <td>11102221001</td>
-            <td>199201910210</td>
-            <td>S1</td>
-            <td><button class="modal-trigger" href="#loginmodal">Detil</button></td>
-          </tr>
-          <tr>
-            <td>Cemewew Kintil</td>
-            <td>69217319371</td>
-            <td>11102221001</td>
-            <td>199201910210</td>
-            <td>S1</td>
-            <td><button class="modal-trigger" href="#loginmodal">Detil</button></td>
-          </tr>
+          <?php } ?>
         </tbody>
       </table>
 </div>

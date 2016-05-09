@@ -6,32 +6,20 @@
     <table>
         <thead>
           <tr>
-              <th data-field="id">Mata Pelajaran</th>
-              <th data-field="id">Kelas</th>
-              <th data-field="id">Tahun Ajaran</th>
+              <th data-field="id">Kode</th>
+              <th data-field="id">Nama</th>
               <th data-field="id">Edit Mata Pelajaran</th>
           </tr>
         </thead>
 
         <tbody>
+          <?php foreach ($mapel as $row) { ?>
           <tr>
-            <td>Matematika</td>
-            <td>XII</td>
-            <td>2015/2016</td>
+            <td><?php echo $row->kode_mapel; ?></td>
+            <td><?php echo $row->nama; ?></td>
             <td><button class="modal-trigger" href="#editmatpel">Edit</button></td>
           </tr>
-          <tr>
-            <td>Ekonomi</td>
-            <td>X</td>
-            <td>2015/2016</td>
-            <td><button class="modal-trigger" href="#editmatpel">Edit</button></td>
-          </tr>
-          <tr>
-            <td>Fisika</td>
-            <td>XI</td>
-            <td>2015/2016</td>
-            <td><button class="modal-trigger" href="#editmatpel">Edit</button></td>
-          </tr>
+          <?php } ?>
         </tbody>
       </table>
 </div>
