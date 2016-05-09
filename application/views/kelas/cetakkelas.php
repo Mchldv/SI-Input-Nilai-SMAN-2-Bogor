@@ -5,39 +5,32 @@
     <table>
         <thead>
           <tr>
-              <th data-field="id">Kelas</th>
+              <th data-field="id">Tingkat</th>
+              <th data-field="id">Jurusan</th>
+              <th data-field="id">Nomor Kelas</th>
               <th data-field="id">Tahun Ajaran</th>
               <th data-field="id">Wali Kelas</th>
-              <th data-field="price">Detil Murid</th>
           </tr>
         </thead>
 
         <tbody>
+          <?php foreach ($kelas as $row) { ?>
           <tr>
-            <td>XII IPA A</td>
-            <td>2015/2016</td>
-            <td>Similikiti Hareera</td>
+            <td><?php echo $row->tingkat; ?></td>
+            <td><?php echo $row->jurusan; ?></td>
+            <td><?php echo $row->nomor_kelas; ?></td>
+            <td><?php echo $row->tahun_ajar; ?></td>
+            <td><?php echo $row->wali_kelas; ?></td>
             <td><button class="modal-trigger" href="#loginmodal">Detil</button></td>
           </tr>
-          <tr>
-            <td>XII IPA A</td>
-            <td>2015/2016</td>
-            <td>Similikiti Hareera</td>
-            <td><button class="modal-trigger" href="#loginmodal">Detil</button></td>
-          </tr>
-          <tr>
-            <td>XII IPA A</td>
-            <td>2015/2016</td>
-            <td>Similikiti Hareera</td>
-            <td><button class="modal-trigger" href="#loginmodal">Detil</button></td>
-          </tr>
+          <?php } ?>
         </tbody>
       </table>
 </div>
 <div id="loginmodal" class="modal">
     <div class="modal-content">
       <div class="row">
-        kunyuk
+        kunyuk <!-- HAHAHAHAHAHA INI APAAN KAMPRET -->
       </div>
  
     </div>
