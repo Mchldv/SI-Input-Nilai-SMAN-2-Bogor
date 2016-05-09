@@ -10,6 +10,10 @@ class Home extends CI_Controller {
 	{
         $this->load->view('home/opsi');
 	}
+    public function login()
+	{
+        $this->load->view('home/login');
+	}
     public function opsimatpel()
 	{
         $this->load->view('penilaian/opsimatpel');

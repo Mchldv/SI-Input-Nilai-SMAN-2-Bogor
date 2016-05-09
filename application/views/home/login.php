@@ -34,7 +34,7 @@
             margin-top: 0.75em;
         }
         .parallax-container {
-            color: #ffffff;
+            color: black;
             padding-top: 6em;
         }
         .textbox {
@@ -73,15 +73,17 @@
     <div class="parallax-container fullpage">
         <div class="parallax"><img src="<?php echo base_url();?>assets/img/parallax1_1.png"></div>
         <div class="container paddedrow row">
-            <h1><b>sistem informasi</b></h1>
-            
-            <h5>SMA NEGERI 2 BOGOR</h5>
-        
-            <div class="col m4 offset-m4 s12">
-                <div class="textbox">
-                    <a href="<?php echo base_url();?>home/login">silahkan login</a>
-                </div>
-            </div>
+            <form class="col s12" action="<?php echo base_url();?>home/opsi" method="post">
+                      <div class="input-field col s12">
+                         <input name="email" type="text" placeholder="e.g. fikry@seveid.com">
+                         <label >Email</label>
+                      </div>
+                      <div class="input-field col s12">
+                         <input  name="password" type="password" placeholder="*****">
+                         <label>Password</label>
+                      </div>
+                       <button type="submit" class="btn" style="margin-top: 2em">LOGIN</button> 
+            </form>
         </div>
     </div>
     <footer style="color: dimgray; background-color: #e0e0e0; height: 3em; padding-top: 1em;">

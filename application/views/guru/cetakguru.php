@@ -1,51 +1,76 @@
 <div class="container">
     <h1>Daftar Guru</h1>
-    <a class="waves-effect waves-light btn" href="<?php echo base_url();?>penilaian/input">Tambah Guru</a>
+    <button class="modal-trigger" href="#tambahguru">Tambah Siswa</button>
     <table>
         <thead>
           <tr>
-              <th data-field="id">Nama Lengkap</th>
-              <th data-field="id">NUPTK</th>
               <th data-field="id">NIK</th>
-              <th data-field="id">NIP</th>
-              <th data-field="price">Pendidikan Terakhir</th>
-              <th data-field="price">Detil Lain</th>
+              <th data-field="id">Nama Lengkap</th>
+              <th data-field="price">Edit Data Guru</th>
           </tr>
         </thead>
 
         <tbody>
           <tr>
+            <td>69217319371</td>
             <td>Nanik Sucipto</td>
-            <td>69217319371</td>
-            <td>11102221001</td>
-            <td>199201910210</td>
-            <td>S1</td>
-            <td><button class="modal-trigger" href="#loginmodal">Detil</button></td>
+            <td><button class="modal-trigger" href="#editguru">Edit</button></td>
           </tr>
           <tr>
+            <td>69217319371</td>
             <td>Similikiti Haribut</td>
-            <td>69217319371</td>
-            <td>11102221001</td>
-            <td>199201910210</td>
-            <td>S1</td>
-            <td><button class="modal-trigger" href="#loginmodal">Detil</button></td>
+            <td><button class="modal-trigger" href="#editguru">Edit</button></td>
           </tr>
           <tr>
-            <td>Cemewew Kintil</td>
             <td>69217319371</td>
-            <td>11102221001</td>
-            <td>199201910210</td>
-            <td>S1</td>
-            <td><button class="modal-trigger" href="#loginmodal">Detil</button></td>
+            <td>Cemewew Kintil</td>
+            <td><button class="modal-trigger" href="#editguru">Edit</button></td>
           </tr>
         </tbody>
       </table>
 </div>
 
-<div id="loginmodal" class="modal">
+<div id="tambahguru" class="modal">
     <div class="modal-content">
       <div class="row">
-          <p>halo</p>
+         <div class="col s12" style="padding: 1em 1em 0 1em">
+            <form class="col s12" action="" method="post">
+                      <div class="input-field col s12">
+                         <input name="nik" type="text" class="validate" placeholder="69217319371">
+                         <label>NIK</label>
+                      </div>
+                      <div class="input-field col s12">
+                         <input name="nama" type="text" class="validate" placeholder="Cemewew Kintil">
+                         <label>Nama Lengkap</label>
+                      </div>
+                      <div class="col s12" style="margin-top: 1.25em">
+                         <button type="submit" class="waves-effect waves-light btn">UBAH</button>
+                      </div>
+            </form>
+         </div>
+      </div>
+ 
+    </div>
+</div>
+
+<div id="editguru" class="modal">
+    <div class="modal-content">
+      <div class="row">
+         <div class="col s12" style="padding: 1em 1em 0 1em">
+            <form class="col s12" action="" method="post">
+                      <div class="input-field col s12">
+                         <input name="nik" type="text" class="validate" value="69217319371">
+                         <label>NIK</label>
+                      </div>
+                      <div class="input-field col s12">
+                         <input name="nama" type="text" class="validate" value="Cemewew Kintil">
+                         <label>Nama Lengkap</label>
+                      </div>
+                      <div class="col s12" style="margin-top: 1.25em">
+                         <button type="submit" class="waves-effect waves-light btn">UBAH</button>
+                      </div>
+            </form>
+         </div>
       </div>
  
     </div>
