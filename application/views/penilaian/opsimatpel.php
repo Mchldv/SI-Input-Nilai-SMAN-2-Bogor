@@ -78,16 +78,16 @@
                     <a href="<?php echo base_url();?>penilaian/lihat">Matematika</a>
                 </div>
                 <div class="textbox">
-                    <a>Fisika</a>
+                    <a href="<?php echo base_url();?>penilaian/lihat">Fisika</a>
                 </div>
                 <div class="textbox">
-                    <a>Geografi</a>
+                    <a href="<?php echo base_url();?>penilaian/lihat">Geografi</a>
                 </div>
                 <div class="textbox">
-                    <a>Ekonomi</a>
+                    <a href="<?php echo base_url();?>penilaian/lihat">Ekonomi</a>
                 </div>
                 <div class="textbox">
-                    <a>Kimia</a>
+                    <a href="<?php echo base_url();?>penilaian/lihat">Kimia</a>
                 </div>
             </div>
         </div>
