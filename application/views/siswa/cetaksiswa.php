@@ -5,31 +5,21 @@
         <thead>
           <tr>
               <th data-field="id">NISN</th>
+              <th data-field="id">NIS</th>
               <th data-field="id">Nama Siswa</th>
-              <th data-field="id">Kelas</th>
               <th data-field="id">Ubah Data Siswa</th>
           </tr>
         </thead>
 
         <tbody>
+          <?php foreach ($siswa as $row) { ?>
           <tr>
-            <td>5114100192</td>
-            <td>Alvin</td>
-            <td>12</td>
+            <td><?php echo $row->nisn; ?></td>
+            <td><?php echo $row->nis; ?></td>
+            <td><?php echo $row->nama; ?></td>
             <td><button class="modal-trigger" href="#ubahnilai">Ubah</button></td>
           </tr>
-          <tr>
-            <td>5114100111</td>
-            <td>Alan</td>
-            <td>12</td>
-            <td><button class="modal-trigger" href="#ubahnilai">Ubah</button></td>
-          </tr>
-          <tr>
-            <td>5114100100</td>
-            <td>Jonathan</td>
-            <td>12</td>
-            <td><button class="modal-trigger" href="#ubahnilai">Ubah</button></td>
-          </tr>
+          <?php } ?>
         </tbody>
       </table>
 </div>
