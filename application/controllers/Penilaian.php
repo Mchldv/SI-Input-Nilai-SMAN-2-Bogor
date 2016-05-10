@@ -42,4 +42,17 @@ class Penilaian extends CI_Controller {
         $this->load->view('footer/footer');
 	}
 
+    	public function verifikasi_penilaian(){
+		$this->load->helper('security');
+		$this->load->library('form_validation');
+		$this->form_validation->set_rules('nisn', 'NIK', 'trim|required|min_length[6]|max_length[20]|regex_match[/^[0-9]{6,20}$/]');
+		$this->form_validation->set_rules('name', 'Name', 'trim|required|min_length[6]|max_length[50]|xss_clean');
+        $this->form_validation->set_rules('score', 'Name', 'trim|required|min_length[6]|max_length[50]|xss_clean');
+		
+		if($this->form_validation->run() == FALSE){
+			redirect('/home');
+		}else{
+            $this->cetak();
+		}	
+	}
 }

@@ -34,13 +34,13 @@
     <div class="modal-content">
       <div class="row">
          <div class="col s12" style="padding: 1em 1em 0 1em">
-            <form class="col s12" action="" method="post">
+            <form class="col s12" action="<?php echo base_url();?>guru/verifikasi_guru" method="post">
                       <div class="input-field col s12">
-                         <input name="nik" type="text" class="validate" placeholder="69217319371">
+                         <input name="nik" type="text" class="validate" placeholder="69217319371" required>
                          <label>NIK</label>
                       </div>
                       <div class="input-field col s12">
-                         <input name="nama" type="text" class="validate" placeholder="Cemewew Kintil">
+                         <input name="name" type="text" class="validate" placeholder="Cemewew Kintil" required>
                          <label>Nama Lengkap</label>
                       </div>
                       <div class="col s12" style="margin-top: 1.25em">
@@ -57,13 +57,13 @@
     <div class="modal-content">
       <div class="row">
          <div class="col s12" style="padding: 1em 1em 0 1em">
-            <form class="col s12" action="" method="post">
+            <form class="col s12" action="<?php echo base_url();?>guru/verifikasi_guru" method="post">
                       <div class="input-field col s12">
-                         <input name="nik" type="text" class="validate" value="69217319371">
+                         <input name="nik" type="text" class="validate" value="69217319371" required>
                          <label>NIK</label>
                       </div>
                       <div class="input-field col s12">
-                         <input name="nama" type="text" class="validate" value="Cemewew Kintil">
+                         <input name="nama" type="text" class="validate" value="Cemewew Kintil" required>
                          <label>Nama Lengkap</label>
                       </div>
                       <div class="col s12" style="margin-top: 1.25em">

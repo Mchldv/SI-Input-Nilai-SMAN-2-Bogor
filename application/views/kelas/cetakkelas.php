@@ -43,7 +43,7 @@
     <div class="modal-content">
       <div class="row">
          <div class="col s12" style="padding: 1em 1em 0 1em">
-            <form class="col s12" action="" method="post">
+            <form class="col s12" action="<?php echo base_url();?>kelas/verifikasi_kelas" method="post">
                       <div class="input-field col s12">
                          <input name="nik_wali" type="text" class="validate">
                          <label>NIK Wali</label>
@@ -53,7 +53,7 @@
                          <label>NISN</label>
                       </div>
                       <div class="input-field col s12">
-                         <input name="nama" type="text" class="validate">
+                         <input name="name" type="text" class="validate">
                          <label>Nama Siswa</label>
                       </div>
                       <div class="input-field col s2">
@@ -71,7 +71,7 @@
                             <option>IPS</option>
                           </select>
                       </div>
-                      <div class="input-field col s2">
+                      <div class="input-field col s3">
                           <span>Nomor Kelas</span>
                           <select name="bank" class="browser-default">
                             <option>1</option>
@@ -100,7 +100,7 @@
     <div class="modal-content">
       <div class="row">
         <div class="col s12" style="padding: 1em 1em 0 1em">
-            <form class="col s12" action="" method="post">
+            <form class="col s12" action="<?php echo base_url();?>kelas/verifikasi_kelas" method="post">
                       <div class="input-field col s12">
                          <input name="nik_wali" type="text" class="validate" value="2138173912">
                          <label>NIK Wali</label>
@@ -128,7 +128,7 @@
                             <option>IPS</option>
                           </select>
                       </div>
-                      <div class="input-field col s2">
+                      <div class="input-field col s3">
                           <span>Nomor Kelas</span>
                           <select name="bank" class="browser-default">
                             <option>1</option>

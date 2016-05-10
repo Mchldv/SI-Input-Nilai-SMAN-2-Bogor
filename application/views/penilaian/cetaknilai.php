@@ -41,17 +41,17 @@
     <div class="modal-content">
       <div class="row">
          <div class="col s12" style="padding: 1em 1em 0 1em">
-            <form class="col s12" action="" method="post">
+            <form class="col s12" action="<?php echo base_url();?>penilaian/verifikasi_penilaian" method="post">
                       <div class="input-field col s12">
                          <input name="nisn" type="text" class="validate">
                          <label>NISN</label>
                       </div>
                       <div class="input-field col s12">
-                         <input name="nama" type="text" class="validate">
+                         <input name="name" type="text" class="validate">
                          <label>Nama Siswa</label>
                       </div>
                       <div class="input-field col s12">
-                         <input  name="nilai" type="text" class="validate">
+                         <input  name="score" type="text" class="validate">
                          <label>Nilai</label>
                       </div>
                       <div class="col s12" style="margin-top: 1.25em">
@@ -67,17 +67,17 @@
     <div class="modal-content">
       <div class="row">
          <div class="col s12" style="padding: 1em 1em 0 1em">
-            <form class="col s12" action="" method="post">
+            <form class="col s12" action="<?php echo base_url();?>penilaian/verifikasi_penilaian" method="post">
                       <div class="input-field col s12">
                          <input name="nisn" type="text" class="validate" placeholder="e.g. Fikry Khairytamim">
                          <label>NISN</label>
                       </div>
                       <div class="input-field col s12">
-                         <input name="nama" type="text" class="validate" placeholder="e.g. fikry@seveid.com">
+                         <input name="name" type="text" class="validate" placeholder="e.g. fikry@seveid.com">
                          <label>Nama Siswa</label>
                       </div>
                       <div class="input-field col s12">
-                         <input  name="nilai" type="text" class="validate" placeholder="+6281703434377">
+                         <input  name="score" type="text" class="validate" placeholder="+6281703434377">
                          <label>Nilai</label>
                       </div>
                       <div class="col s12" style="margin-top: 1.25em">
