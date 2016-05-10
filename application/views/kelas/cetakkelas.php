@@ -147,9 +147,8 @@
                          <button type="submit" class="waves-effect waves-light btn">EDIT</button>
                       </div>
             </form>
-         </div>
-      </div>
- 
+            </div>
+        </div>
     </div>
 </div>
 <script>

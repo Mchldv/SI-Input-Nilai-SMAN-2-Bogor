@@ -7,6 +7,7 @@ class Guru_Model extends CI_Model {
 	public function __construct()
 	{
 		parent::__construct();
+		$this->load->database();
 	}
 
 	public function get_all()
@@ -15,7 +16,7 @@ class Guru_Model extends CI_Model {
 
 		$query = $this->db->get('guru');
 
-		return $query;
+		return $query->result();
 	}
 
 	public function search_by_name ($name)
@@ -25,7 +26,7 @@ class Guru_Model extends CI_Model {
 		$this->db->where('nama', $name);
 		$query = $this->db->get('guru');
 
-		return $query;
+		return $query->result();
 	}
 
 	public function search_by_id ($nik)
@@ -35,7 +36,7 @@ class Guru_Model extends CI_Model {
 		$this->db->where('nik', $nik);
 		$query = $this->db->get('guru');
 
-		return $query;
+		return $query->result();
 	}
 
 	/*	Uses $_POST:

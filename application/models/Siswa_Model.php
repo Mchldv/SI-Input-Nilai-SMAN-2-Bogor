@@ -1,11 +1,12 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Siswa extends CI_Model {
+class Siswa_Model extends CI_Model {
 
-	public function __constructor()
+	public function __construct()
 	{
-		parent::__constructor();
+		parent::__construct();
+		$this->load->database();
 	}
 
 	public function get_all()
@@ -14,7 +15,7 @@ class Siswa extends CI_Model {
 
 		$query = $this->db->get ('siswa');
 
-		return $query;
+		return $query->result();
 	}
 
 	/*	Uses $_POST:
