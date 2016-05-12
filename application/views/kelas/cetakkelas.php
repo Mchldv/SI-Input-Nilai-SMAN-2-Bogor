@@ -5,25 +5,44 @@
     <table>
         <thead>
           <tr>
+<<<<<<< HEAD
             <th data-field="id">Tingkat</th>
             <th data-field="id">Jurusan</th>
             <th data-field="id">Nomor Kelas</th>
             <th data-field="id">Tahun Ajaran</th>
             <th data-field="id">Wali Kelas</th>
+=======
+              <th data-field="id">NIK Wali Kelas</th>
+              <th data-field="id">Wali Kelas</th>
+              <th data-field="id">Kelas</th>
+              <th data-field="id">Tahun Ajaran</th>
+              <th data-field="price">Edit Kelas</th>
+>>>>>>> origin/master
           </tr>
         </thead>
 
         <tbody>
-          <?php foreach ($kelas as $row) { ?>
           <tr>
-            <td><?php echo $row->tingkat; ?></td>
-            <td><?php echo $row->jurusan; ?></td>
-            <td><?php echo $row->nomor_kelas; ?></td>
-            <td><?php echo $row->tahun_ajar; ?></td>
-            <td><?php echo $row->wali_kelas; ?></td>
-            <td><button class="modal-trigger" href="#loginmodal">Detil</button></td>
+            <td>2138173912</td>
+            <td>Similikiti Hareera</td>
+            <td>12 IPA 2</td>
+            <td>2015/2016</td>
+            <td><button class="modal-trigger" href="#loginmodal">Edit</button></td>
           </tr>
-          <?php } ?>
+          <tr>
+            <td>2138173912</td>
+            <td>Aselole Uhuy</td>
+            <td>12 IPA 2</td>
+            <td>2015/2016</td>
+            <td><button class="modal-trigger" href="#loginmodal">Edit</button></td>
+          </tr>
+          <tr>
+            <td>2138173912</td>
+            <td>kunyuk blepetan</td>
+            <td>12 IPA 2</td>
+            <td>2015/2016</td>
+            <td><button class="modal-trigger" href="#loginmodal">Edit</button></td>
+          </tr>
         </tbody>
       </table>
 </div>
@@ -32,7 +51,11 @@
     <div class="modal-content">
       <div class="row">
          <div class="col s12" style="padding: 1em 1em 0 1em">
+<<<<<<< HEAD
             <form class="col s12" action="" method="post">
+=======
+            <form class="col s12" action="<?php echo base_url();?>kelas/verifikasi_kelas" method="post">
+>>>>>>> origin/master
                       <div class="input-field col s12">
                          <input name="nik_wali" type="text" class="validate">
                          <label>NIK Wali</label>
@@ -42,7 +65,11 @@
                          <label>NISN</label>
                       </div>
                       <div class="input-field col s12">
+<<<<<<< HEAD
                          <input name="nama" type="text" class="validate">
+=======
+                         <input name="name" type="text" class="validate">
+>>>>>>> origin/master
                          <label>Nama Siswa</label>
                       </div>
                       <div class="input-field col s2">
@@ -60,7 +87,11 @@
                             <option>IPS</option>
                           </select>
                       </div>
+<<<<<<< HEAD
                       <div class="input-field col s2">
+=======
+                      <div class="input-field col s3">
+>>>>>>> origin/master
                           <span>Nomor Kelas</span>
                           <select name="bank" class="browser-default">
                             <option>1</option>
@@ -89,7 +120,11 @@
     <div class="modal-content">
       <div class="row">
         <div class="col s12" style="padding: 1em 1em 0 1em">
+<<<<<<< HEAD
             <form class="col s12" action="" method="post">
+=======
+            <form class="col s12" action="<?php echo base_url();?>kelas/verifikasi_kelas" method="post">
+>>>>>>> origin/master
                       <div class="input-field col s12">
                          <input name="nik_wali" type="text" class="validate" value="2138173912">
                          <label>NIK Wali</label>
@@ -117,7 +152,11 @@
                             <option>IPS</option>
                           </select>
                       </div>
+<<<<<<< HEAD
                       <div class="input-field col s2">
+=======
+                      <div class="input-field col s3">
+>>>>>>> origin/master
                           <span>Nomor Kelas</span>
                           <select name="bank" class="browser-default">
                             <option>1</option>

@@ -5901,7 +5901,7 @@ small {
 .btn, .btn-large {
   text-decoration: none;
   color: #fff;
-  background-color: #00a9d3;
+  background-color: black;
   text-align: center;
   letter-spacing: .5px;
   transition: .2s ease-out;
@@ -5909,7 +5909,7 @@ small {
 }
 
 .btn:hover, .btn-large:hover {
-  background-color: #2bbbad;
+  background-color: black;
 }
 
 .btn-floating {
@@ -6743,7 +6743,7 @@ textarea.materialize-textarea + label:after {
 }
 
 .input-field label {
-  color: #9e9e9e;
+  color: black;
   position: absolute;
   top: 0.8rem;
   left: 0.75rem;
