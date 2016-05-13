@@ -43,23 +43,6 @@
     <div class="modal-content">
       <div class="row">
          <div class="col s12" style="padding: 1em 1em 0 1em">
-<<<<<<< HEAD
-            <form class="col s12" action="" method="post">
-                      <div class="input-field col s12">
-                         <input name="nisn" type="text" class="validate" placeholder="MTK231801">
-                         <label>Kode Mata Pelajaran</label>
-                      </div>
-                      <div class="input-field col s12">
-                         <input name="nis" type="text" class="validate" placeholder="Matematika">
-                         <label>Mata Pelajaran</label>
-                      </div>
-                      <div class="input-field col s12">
-                         <input name="nama" type="text" class="validate" placeholder="12">
-                         <label>Kelas</label>
-                      </div>
-                      <div class="input-field col s12">
-                         <input name="kelas" type="text" class="validate" placeholder="2016/2017">
-=======
             <form class="col s12" action="<?php echo base_url();?>mapel/verifikasi_mapel" method="post">
                       <div class="input-field col s12">
                          <input name="code" type="text" class="validate" placeholder="MTK231801">
@@ -97,7 +80,6 @@
                       </div>
                       <div class="input-field col s12">
                          <input name="year" type="text" class="validate" placeholder="2016/2017">
->>>>>>> origin/master
                          <label>Tahun Ajaran</label>
                       </div>
                       <div class="col s12" style="margin-top: 1.25em">
@@ -113,23 +95,6 @@
     <div class="modal-content">
       <div class="row">
          <div class="col s12" style="padding: 1em 1em 0 1em">
-<<<<<<< HEAD
-            <form class="col s12" action="" method="post">
-                      <div class="input-field col s12">
-                         <input name="nisn" type="text" class="validate" value="MTK231801">
-                         <label>Kode Mata Pelajaran</label>
-                      </div>
-                      <div class="input-field col s12">
-                         <input name="nis" type="text" class="validate" value="Matematika">
-                         <label>Mata Pelajaran</label>
-                      </div>
-                      <div class="input-field col s12">
-                         <input name="nama" type="text" class="validate" value="12">
-                         <label>Kelas</label>
-                      </div>
-                      <div class="input-field col s12">
-                         <input name="kelas" type="text" class="validate" value="2016/2017">
-=======
             <form class="col s12" action="<?php echo base_url();?>mapel/verifikasi_mapel" method="post">
                       <div class="input-field col s12">
                          <input name="code" type="text" class="validate" value="MTK231801">
@@ -167,7 +132,6 @@
                       </div>
                       <div class="input-field col s12">
                          <input name="year" type="text" class="validate" value="2016/2017">
->>>>>>> origin/master
                          <label>Tahun Ajaran</label>
                       </div>
                       <div class="col s12" style="margin-top: 1.25em">

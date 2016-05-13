@@ -79,7 +79,7 @@
         
             <div class="col m4 offset-m4 s12">
                 <div class="textbox">
-                    <a href="<?php echo base_url();?>home/login">silahkan login</a>
+                    <a href="<?php echo base_url();?>home/opsi">silahkan masuk</a>
                 </div>
             </div>
         </div>
