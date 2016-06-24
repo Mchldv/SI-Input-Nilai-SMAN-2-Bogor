@@ -1,7 +1,17 @@
 <div class="container">
     <h1>MATEMATIKA</h1>
-    <button class="modal-trigger" href="#inputnilai">Input Nilai</button>
     <table>
+        <div class="input-field col s1">
+              <span>Nomor Kelas</span>
+              <select name="bank" class="browser-default">
+                <option>X-1</option>
+                <option>X-2</option>
+                <option>X-3</option>
+                <option>X-4</option>
+                <option>X-5</option>
+                <option>X-6</option>
+              </select>
+        </div>
         <thead>
           <tr>
               <th data-field="id">NISN</th>
@@ -36,6 +46,7 @@
           </tr>
         </tbody>
       </table>
+        <button class="modal-trigger" href="#inputnilai">Input Nilai</button>
 </div>
 <div id="inputnilai" class="modal">
     <div class="modal-content">
