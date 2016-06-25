@@ -1,17 +1,17 @@
 <div class="container">
     <h1>MATEMATIKA</h1>
+    <div class="input-field col s3">
+          <span>Nomor Kelas</span>
+          <select name="bank" class="browser-default">
+            <option>X-1</option>
+            <option>X-2</option>
+            <option>X-3</option>
+            <option>X-4</option>
+            <option>X-5</option>
+            <option>X-6</option>
+          </select>
+    </div>
     <table>
-        <div class="input-field col s1">
-              <span>Nomor Kelas</span>
-              <select name="bank" class="browser-default">
-                <option>X-1</option>
-                <option>X-2</option>
-                <option>X-3</option>
-                <option>X-4</option>
-                <option>X-5</option>
-                <option>X-6</option>
-              </select>
-        </div>
         <thead>
           <tr>
               <th data-field="id">NISN</th>
@@ -28,21 +28,21 @@
             <td>Alvin</td>
             <td>100</td>
             <td><button class="modal-trigger" href="#ubahnilai">Ubah</button></td>
-            <td><button class="waves-effect waves-light btn" href="<?php echo base_url();?>penilaian/hapus">Hapus</button></td>
+            <td><button class="modal-trigger" href="#konfirmasihapus">Hapus</button></td>
           </tr>
           <tr>
             <td>5114100111</td>
             <td>Alan</td>
             <td>100</td>
             <td><button class="modal-trigger" href="#ubahnilai">Ubah</button></td>
-            <td><button class="waves-effect waves-light btn" href="<?php echo base_url();?>penilaian/hapus">Hapus</button></td>
+            <td><button class="modal-trigger" href="#konfirmasihapus">Hapus</button></td>
           </tr>
           <tr>
             <td>5114100100</td>
             <td>Jonathan</td>
             <td>100</td>
             <td><button class="modal-trigger" href="#ubahnilai">Ubah</button></td>
-            <td><button class="waves-effect waves-light btn" href="<?php echo base_url();?>penilaian/hapus">Hapus</button></td>
+            <td><button class="modal-trigger" href="#konfirmasihapus">Hapus</button></td>
           </tr>
         </tbody>
       </table>
@@ -95,6 +95,22 @@
                          <button type="submit" class="waves-effect waves-light btn">UBAH</button>
                       </div>
             </form>
+         </div>
+      </div>
+ 
+    </div>
+</div>
+<div id="konfirmasihapus" class="modal">
+    <div class="modal-content">
+      <div class="row">
+         <div class="col s12" style="padding: 1em 1em 0 1em">
+             <p>APAKAH ANDA YAKIN INGIN MENGHAPUS DATA?</p>
+         </div>
+          <div class="col s6" style="padding: 1em 1em 0 1em">
+             <button>IYA</button>
+         </div>
+          <div class="col s6" style="padding: 1em 1em 0 1em">
+             <button>TIDAK</button>
          </div>
       </div>
  
