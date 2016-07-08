@@ -75,7 +75,7 @@
         <div class="container paddedrow row">
             <div class="col m4 offset-m4 s12">
                 <div class="textbox">
-                    <a href="<?php echo base_url();?>home/opsimatpel">Penilaian</a>
+                    <a href="<?php echo base_url();?>penilaian/lihat">Penilaian</a>
                 </div>
                 <div class="textbox">
                     <a href="<?php echo base_url();?>kelas/cetak">Kelas</a>

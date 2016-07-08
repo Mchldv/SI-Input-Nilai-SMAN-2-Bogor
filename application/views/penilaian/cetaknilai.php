@@ -1,7 +1,17 @@
 <div class="container">
-    <h1>MATEMATIKA</h1>
+    <div class="row">
     <div class="input-field col s3">
-          <span>Nomor Kelas</span>
+          <span>Mata Pelajaran</span>
+          <select name="bank" class="browser-default">
+            <option>Matematika</option>
+            <option>Fisika</option>
+            <option>Geografi</option>
+            <option>Ekonomi</option>
+            <option>Kimia</option>
+          </select>
+    </div>
+    <div class="input-field col s3">
+          <span>Kelas</span>
           <select name="bank" class="browser-default">
             <option>X-1</option>
             <option>X-2</option>
@@ -11,6 +21,9 @@
             <option>X-6</option>
           </select>
     </div>
+    <div class="input-field col s3">
+        <a>lihat</a>
+        </div>
     <table>
         <thead>
           <tr>
@@ -47,6 +60,7 @@
         </tbody>
       </table>
         <button class="modal-trigger" href="#inputnilai">Input Nilai</button>
+    </div>
 </div>
 <div id="inputnilai" class="modal">
     <div class="modal-content">
