@@ -8,34 +8,19 @@
           <tr>
               <th data-field="id">Kode Mata Pelajaran</th>
               <th data-field="id">Mata Pelajaran</th>
-              <th data-field="id">Kelas</th>
-              <th data-field="id">Tahun Ajaran</th>
               <th data-field="id">Edit Mata Pelajaran</th>
           </tr>
         </thead>
 
         <tbody>
+        <?php foreach ($mapel as $object)
+        { ?>
           <tr>
-            <td>MTK2918</td>
-            <td>Matematika</td>
-            <td>XII</td>
-            <td>2015/2016</td>
+            <td><?php echo $object->kode_mapel; ?></td>
+            <td><?php echo $object->nama; ?></td>
             <td><button class="modal-trigger" href="#editmatpel">Edit</button></td>
           </tr>
-          <tr>
-            <td>EKO2918</td>
-            <td>Ekonomi</td>
-            <td>X</td>
-            <td>2015/2016</td>
-            <td><button class="modal-trigger" href="#editmatpel">Edit</button></td>
-          </tr>
-          <tr>
-            <td>FSK2918</td>
-            <td>Fisika</td>
-            <td>XI</td>
-            <td>2015/2016</td>
-            <td><button class="modal-trigger" href="#editmatpel">Edit</button></td>
-          </tr>
+        <?php } ?>
         </tbody>
       </table>
 </div>

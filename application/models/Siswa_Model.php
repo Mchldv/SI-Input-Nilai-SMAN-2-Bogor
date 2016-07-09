@@ -1,6 +1,11 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+/*	Siswa consists of several attributes
+ *		nisn 	( pk, char(20) )
+ *		nis 	( char(20) )
+ *		nama 	(varchar(50) )
+ */
 class Siswa_Model extends CI_Model {
 
 	public function __construct()

@@ -14,27 +14,16 @@
         </thead>
 
         <tbody>
+        <?php foreach ($kelas as $object)
+        { ?>
           <tr>
-            <td>2138173912</td>
-            <td>Similikiti Hareera</td>
-            <td>12 IPA 2</td>
-            <td>2015/2016</td>
+            <td><?php echo $object->nik_wali_kelas; ?></td>
+            <td><?php echo $object->wali_kelas; ?></td>
+            <td><?php echo $object->tingkat . ' ' . $object->jurusan . ' ' . $object->nomor_kelas; ?></td>
+            <td><?php echo $object->tahun_ajar; ?></td>
             <td><button class="modal-trigger" href="#loginmodal">Edit</button></td>
           </tr>
-          <tr>
-            <td>2138173912</td>
-            <td>Aselole Uhuy</td>
-            <td>12 IPA 2</td>
-            <td>2015/2016</td>
-            <td><button class="modal-trigger" href="#loginmodal">Edit</button></td>
-          </tr>
-          <tr>
-            <td>2138173912</td>
-            <td>kunyuk blepetan</td>
-            <td>12 IPA 2</td>
-            <td>2015/2016</td>
-            <td><button class="modal-trigger" href="#loginmodal">Edit</button></td>
-          </tr>
+        <?php } ?>
         </tbody>
       </table>
 </div>

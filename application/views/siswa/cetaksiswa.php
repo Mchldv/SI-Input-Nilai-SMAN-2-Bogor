@@ -7,30 +7,19 @@
               <th data-field="id">NISN</th>
               <th data-field="id">NIS</th>
               <th data-field="id">Nama Siswa</th>
-              <th data-field="id">Kelas</th>
               <th data-field="id">Ubah Data Siswa</th>
           </tr>
         </thead>
         <tbody>
-            <td>5114100192</td>
-            <td>39120319731</td>
-            <td>Alvin</td>
-            <td>12</td>
+        <?php foreach ($siswa as $object)
+        { ?>
+          <tr>
+            <td><?php echo $object->nisn; ?></td>
+            <td><?php echo $object->nis; ?></td>
+            <td><?php echo $object->nama; ?></td>
             <td><button class="modal-trigger" href="#ubahsiswa">Ubah</button></td>
           <tr>
-            <td>5114100111</td>
-            <td>39120319731</td>
-            <td>Alan</td>
-            <td>12</td>
-            <td><button class="modal-trigger" href="#ubahsiswa">Ubah</button></td>
-          </tr>
-          <tr>
-            <td>5114100100</td>
-            <td>39120319731</td>
-            <td>Jonathan</td>
-            <td>12</td>
-            <td><button class="modal-trigger" href="#ubahnilai">Ubah</button></td>
-          </tr>
+        <?php } ?>
         </tbody>
       </table>
 </div>

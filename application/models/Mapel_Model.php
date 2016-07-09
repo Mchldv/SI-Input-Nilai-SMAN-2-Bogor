@@ -1,6 +1,10 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+/*	Mapel consists of several attributes
+*		kode_mapel 	( pk, char(12) )
+*		nama 		( varchar(50) )
+*/
 class Mapel_Model extends CI_Model {
 
 	public function __construct()

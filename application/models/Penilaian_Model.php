@@ -1,6 +1,16 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+/*	Nilai consists of several attributes:
+ *		nisn 				( pk, char(20) )
+ *		kode_mapel 			( char(20) )
+ *		pengetahuan 		( int(3) )
+ *		keterampilan 		( int(3) )
+ *		sosial 				( int(3) )
+ *		deskr_pengetahuan 	( varchar(512) )
+ *		deskr_keterampilan 	( varchar(512) )
+ *		deskr_sosial 		( varchar(512) )
+ */
 class Penilaian_Model extends CI_Model {
 
 	public function __construct()

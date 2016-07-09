@@ -11,21 +11,14 @@
         </thead>
 
         <tbody>
+        <?php foreach ($guru as $object)
+        { ?>
           <tr>
-            <td>69217319371</td>
-            <td>Nanik Sucipto</td>
+            <td><?php echo $object->nik; ?></td>
+            <td><?php echo $object->nama; ?></td>
             <td><button class="modal-trigger" href="#editguru">Edit</button></td>
           </tr>
-          <tr>
-            <td>69217319371</td>
-            <td>Similikiti Haribut</td>
-            <td><button class="modal-trigger" href="#editguru">Edit</button></td>
-          </tr>
-          <tr>
-            <td>69217319371</td>
-            <td>Cemewew Kintil</td>
-            <td><button class="modal-trigger" href="#editguru">Edit</button></td>
-          </tr>
+        <?php } ?>
         </tbody>
       </table>
 </div>

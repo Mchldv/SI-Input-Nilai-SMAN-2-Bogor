@@ -2,6 +2,14 @@
 
 if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
+/*	Kelas consists of several attributes:
+ *		id ( pk, int(11) )
+ *		nik_wali ( char(20) )
+ *		tingkat ( int(2) )
+ *		jurusan ( varchar(6) )
+ *		nomor_kelas ( int(2) )
+ *		tahun_ajar ( varchar(9) )
+ */
 class Kelas_Model extends CI_Model {
 
 	public function __construct()

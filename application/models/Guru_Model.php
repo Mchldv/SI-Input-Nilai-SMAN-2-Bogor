@@ -2,6 +2,11 @@
 
 if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
+/*	Guru consists of several attribute:
+ *		nik 	( pk, char(20) )
+ *		nama 	( varchar(50) )
+ */
+
 class Guru_Model extends CI_Model {
 
 	public function __construct()
@@ -41,7 +46,7 @@ class Guru_Model extends CI_Model {
 
 	/*	Uses $_POST:
 	 *		['nik'] fills the new record's 'nik'
-	 *		['name'] fills the new record's 'nama'
+	 *		['nama'] fills the new record's 'nama'
 	 */
 	public function insert ()
 	{

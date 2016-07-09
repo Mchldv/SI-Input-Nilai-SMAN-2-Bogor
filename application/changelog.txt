@@ -170,3 +170,19 @@ Changed:
 Added:
 [+] Constructor for every controller
 [+] Added function at application/models/Kelas_Model.php
+
+==========
+09-07-2016
+==========
+
+Changed:
+[@] Guru, Mapel, Kelas, Siswa
+[@] Guru now show the real data
+[@] Mapel now show the real data
+[@] Kelas now show the real data
+[@] Siswa now show the real data
+
+Added:
+
+[+] Models documentation
+[+] 'nik_wali_kelas' column in view 'readable_kelas'
