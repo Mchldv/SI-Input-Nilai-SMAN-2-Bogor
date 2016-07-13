@@ -1,29 +1,25 @@
 <div class="container">
     <div class="row">
-    <div class="input-field col s3">
-          <span>Mata Pelajaran</span>
-          <select name="bank" class="browser-default">
-            <option>Matematika</option>
-            <option>Fisika</option>
-            <option>Geografi</option>
-            <option>Ekonomi</option>
-            <option>Kimia</option>
-          </select>
-    </div>
-    <div class="input-field col s3">
-          <span>Kelas</span>
-          <select name="bank" class="browser-default">
-            <option>X-1</option>
-            <option>X-2</option>
-            <option>X-3</option>
-            <option>X-4</option>
-            <option>X-5</option>
-            <option>X-6</option>
-          </select>
-    </div>
-    <div class="input-field col s3">
-        <a>lihat</a>
+    <form method="POST" action="insert_query.php">
+        <div class="input-field col s12 l3 form-group">
+            <select name="type" id="type" required="required">
+                <option value="" disabled selected>Choose          <option value="1">Matematika</option>
+                <option value="2">Fisika</option>
+                <option>Geografi</option>
+                <option>Ekonomi</option>
+                <option>Kimia</option>
+              </select>
+          </div>
+        <!--pake php kalo valuenya 1 misal ntar keluar kelasnya yang available!-->
+        <div class="input-field col s12 l3 form-group">
+           <select name="type1" id="type1" required="required">
+            <option value="" disabled selected>Choose Subcategory</option>
+           </select>
         </div>
+        <div class="input-field col s12 l3 form-group">
+            <button type="submit" class="waves-effect waves-light btn grey darken-1">Cek Nilai</button>
+        </div>
+    </form>
     <table>
         <thead>
           <tr>
