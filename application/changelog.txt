@@ -176,13 +176,24 @@ Added:
 ==========
 
 Changed:
-[@] Guru, Mapel, Kelas, Siswa
 [@] Guru now show the real data
 [@] Mapel now show the real data
 [@] Kelas now show the real data
 [@] Siswa now show the real data
 
 Added:
-
+[+] Guru, Mapel, Kelas, Siswa controller now has constructor
 [+] Models documentation
 [+] 'nik_wali_kelas' column in view 'readable_kelas'
+
+==========
+13-07-2016
+==========
+
+Changed:
+[@] Mata Pelajaran dropdown in view/penilaian/cetaknilai should be functional now
+
+Added:
+[+] Penilaian controller now has constructor
+[+] Function to fetch 'kelas' identifier (id, tingkat, jurusan, nomor kelas, tahun ajar) (get_class) 
+[+] Function to fetch 'mapel' identifier (kode_mapel, nama) (get_subject) 

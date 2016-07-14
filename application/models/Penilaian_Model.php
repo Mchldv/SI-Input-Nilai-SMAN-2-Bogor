@@ -106,6 +106,25 @@ class Penilaian_Model extends CI_Model {
 		$this->db->replace ('nilai', $data);
 	}
 
+	public function get_class ()
+	{
+		$this->db->reconnect();
+
+		$this->db->select ('id, tingkat, jurusan, nomor_kelas, tahun_ajar');
+		$query = $this->db->get ('kelas');
+
+		return $query->result();
+	}
+
+	public function get_subject ()
+	{
+		$this->db->reconnect();
+
+		$query = $this->db->get ('mapel');
+
+		return $query->result();
+	}
+
 	//	Uses nisn and kode_mapel (id) as keyfinder
 	public function delete ($nisn, $kode_mapel)
 	{

@@ -3,17 +3,17 @@
     <form method="POST" action="insert_query.php">
         <div class="input-field col s12 l3 form-group">
             <select name="type" id="type" required="required">
-                <option value="" disabled selected>Choose          <option value="1">Matematika</option>
-                <option value="2">Fisika</option>
-                <option>Geografi</option>
-                <option>Ekonomi</option>
-                <option>Kimia</option>
-              </select>
+                <option value="" disabled selected>Mata Pelajaran
+                <?php foreach ($subject as $row)
+                { ?>
+                    <option value="<?php echo $row->kode_mapel; ?>"><?php echo $row->nama; ?></option>
+                <?php } ?>
+            </select>
           </div>
         <!--pake php kalo valuenya 1 misal ntar keluar kelasnya yang available!-->
         <div class="input-field col s12 l3 form-group">
            <select name="type1" id="type1" required="required">
-            <option value="" disabled selected>Choose Subcategory</option>
+            <option value="" disabled selected>Kelas</option>
            </select>
         </div>
         <div class="input-field col s12 l3 form-group">
