@@ -36,26 +36,26 @@
             <td>5114100192</td>
             <td>Alvin</td>
             <td>100</td>
-            <td><button class="modal-trigger" href="#ubahnilai">Ubah</button></td>
-            <td><button class="modal-trigger" href="#konfirmasihapus">Hapus</button></td>
+            <td><button class="modal-trigger waves-effect waves-light btn grey darken-1" href="#ubahnilai">Ubah</button></td>
+            <td><button class="modal-trigger waves-effect waves-light btn grey darken-1" href="#konfirmasihapus">Hapus</button></td>
           </tr>
           <tr>
             <td>5114100111</td>
             <td>Alan</td>
             <td>100</td>
-            <td><button class="modal-trigger" href="#ubahnilai">Ubah</button></td>
-            <td><button class="modal-trigger" href="#konfirmasihapus">Hapus</button></td>
+            <td><button class="modal-trigger waves-effect waves-light btn grey darken-1" href="#ubahnilai">Ubah</button></td>
+            <td><button class="modal-trigger waves-effect waves-light btn grey darken-1" href="#konfirmasihapus">Hapus</button></td>
           </tr>
           <tr>
             <td>5114100100</td>
             <td>Jonathan</td>
             <td>100</td>
-            <td><button class="modal-trigger" href="#ubahnilai">Ubah</button></td>
-            <td><button class="modal-trigger" href="#konfirmasihapus">Hapus</button></td>
+            <td><button class="modal-trigger waves-effect waves-light btn grey darken-1" href="#ubahnilai">Ubah</button></td>
+            <td><button class="modal-trigger waves-effect waves-light btn grey darken-1" href="#konfirmasihapus">Hapus</button></td>
           </tr>
         </tbody>
       </table>
-        <button class="modal-trigger" href="#inputnilai">Input Nilai</button>
+        <button class="modal-trigger waves-effect waves-light btn grey darken-1" href="#inputnilai">Input Nilai</button>
     </div>
 </div>
 <div id="inputnilai" class="modal">
@@ -117,10 +117,10 @@
              <p>APAKAH ANDA YAKIN INGIN MENGHAPUS DATA?</p>
          </div>
           <div class="col s6" style="padding: 1em 1em 0 1em">
-             <button>IYA</button>
+             <button class="waves-effect waves-light btn grey darken-1">IYA</button>
          </div>
           <div class="col s6" style="padding: 1em 1em 0 1em">
-             <button>TIDAK</button>
+             <button class="waves-effect waves-light btn grey darken-1">TIDAK</button>
          </div>
       </div>
  
