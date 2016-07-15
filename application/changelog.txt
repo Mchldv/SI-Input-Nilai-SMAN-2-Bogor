@@ -196,4 +196,17 @@ Changed:
 Added:
 [+] Penilaian controller now has constructor
 [+] Function to fetch 'kelas' identifier (id, tingkat, jurusan, nomor kelas, tahun ajar) (get_class) 
-[+] Function to fetch 'mapel' identifier (kode_mapel, nama) (get_subject) 
+[+] Function to fetch 'mapel' identifier (kode_mapel, nama) (get_subject)
+
+==========
+15-07-2016
+==========
+
+Changed:
+[@] 'verifikasi_guru' in controller/Guru is now 'verifikasi_tambah'
+[@] 'verifikasi_mapel' in controller/Mapel is now 'verifikasi_tambah'
+[@] 'verifikasi_kelas' in controller/Kelas is now 'verifikasi_tambah'
+[@] 'verifikasi_siswa' in controller/Siswa is now 'verifikasi_tambah'
+[@] Insertion form of 'Guru' is functional
+[@] Insertion form of 'Mapel' is functional
+[@] Insertion form of 'Kelas' is functional
