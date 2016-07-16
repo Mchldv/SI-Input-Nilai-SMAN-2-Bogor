@@ -209,6 +209,7 @@ Changed:
 [@] 'verifikasi_siswa' in controller/Siswa is now 'verifikasi_tambah'
 [@] Insertion form of 'Guru' is functional
 [@] Insertion form of 'Mapel' is functional
+<<<<<<< HEAD
 [@] Insertion form of 'Kelas' is functional
 
 ==========
@@ -220,3 +221,6 @@ Changed:
 
 Added:
 [+] Error message when trying to input identical record of 'Kelas'
+=======
+[@] Insertion form of 'Kelas' is functional
+>>>>>>> 404e20f3bb63b17b64f87161c15d146eb3e9ca98

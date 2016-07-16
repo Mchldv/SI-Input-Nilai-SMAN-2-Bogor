@@ -53,6 +53,7 @@ class Kelas extends CI_Controller {
 		$this->load->helper('security');
 		$this->load->library('form_validation');
 		$this->form_validation->set_rules('nik_wali', 'NIK', 'trim|required|min_length[6]|max_length[20]|regex_match[/^[0-9]{6,20}$/]');
+<<<<<<< HEAD
 
         // $this->form_validation->set_rules('nisn', 'NIK', 'trim|required|min_length[6]|max_length[20]|regex_match[/^[0-9]{6,20}$/]');
 		// $this->form_validation->set_rules('name', 'Name', 'trim|required|min_length[6]|max_length[50]|xss_clean');
@@ -66,6 +67,16 @@ class Kelas extends CI_Controller {
 				$this->cetak();
 			else
 				redirect('/kelas/cetak');
+=======
+        $this->form_validation->set_rules('nisn', 'NIK', 'trim|required|min_length[6]|max_length[20]|regex_match[/^[0-9]{6,20}$/]');
+		$this->form_validation->set_rules('name', 'Name', 'trim|required|min_length[6]|max_length[50]|xss_clean');
+        $this->form_validation->set_rules('year', 'Tahun Ajar', 'trim|required|min_length[6]|max_length[50]|xss_clean');
+		
+		if ($this->form_validation->run() == TRUE)
+		{
+			$this->Kelas_Model->insert();
+			redirect('/guru/cetak');
+>>>>>>> 404e20f3bb63b17b64f87161c15d146eb3e9ca98
 		}
 		else
             $this->cetak();

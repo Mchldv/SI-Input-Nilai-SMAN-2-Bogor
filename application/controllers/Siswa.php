@@ -48,8 +48,13 @@ class Siswa extends CI_Controller {
 	{
 		$this->load->helper('security');
 		$this->load->library('form_validation');
+<<<<<<< HEAD
 		$this->form_validation->set_rules('nis', 'NIS', 'trim|required|min_length[6]|max_length[20]');
         $this->form_validation->set_rules('nisn', 'NISN', 'trim|required|min_length[6]|max_length[20]');
+=======
+		$this->form_validation->set_rules('nis', 'NIS', 'trim|required|min_length[6]|max_length[20]|regex_match[/^[0-9]{6,20}$/]');
+        $this->form_validation->set_rules('nisn', 'NISN', 'trim|required|min_length[6]|max_length[20]|regex_match[/^[0-9]{6,20}$/]');
+>>>>>>> 404e20f3bb63b17b64f87161c15d146eb3e9ca98
 		$this->form_validation->set_rules('nama', 'Nama', 'trim|required|min_length[6]|max_length[50]|xss_clean');
         
 		if ($this->form_validation->run() == TRUE)
