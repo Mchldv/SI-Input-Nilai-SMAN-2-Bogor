@@ -1,7 +1,6 @@
 <div class="container">
     <h1>Daftar Guru</h1>
-    <?php echo validation_errors(); ?>
-    <button class="modal-trigger" href="#tambahguru">Tambah Guru</button>
+    <button class="modal-trigger" href="#tambahguru">Tambah Siswa</button>
     <table>
         <thead>
           <tr>
@@ -28,13 +27,13 @@
     <div class="modal-content">
       <div class="row">
          <div class="col s12" style="padding: 1em 1em 0 1em">
-            <form class="col s12" action="<?php echo base_url();?>guru/verifikasi_tambah" method="post">
+            <form class="col s12" action="<?php echo base_url();?>guru/verifikasi_guru" method="post">
                       <div class="input-field col s12">
-                         <input name="nik" type="text" class="validate" placeholder="NIK" required>
+                         <input name="nik" type="text" class="validate" placeholder="69217319371" required>
                          <label>NIK</label>
                       </div>
                       <div class="input-field col s12">
-                         <input name="nama" type="text" class="validate" placeholder="Nama Lengkap" required>
+                         <input name="name" type="text" class="validate" placeholder="Cemewew Kintil" required>
                          <label>Nama Lengkap</label>
                       </div>
                       <div class="col s12" style="margin-top: 1.25em">

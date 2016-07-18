@@ -18,7 +18,7 @@ class Kelas_Model extends CI_Model {
 		$this->load->database();
 	}
 
-	public function get_kelas_all()
+	public function get_all()
 	{
 		$this->db->reconnect();
 
@@ -27,19 +27,10 @@ class Kelas_Model extends CI_Model {
 		return $query->result();
 	}
 
-	public function get_guru()
-	{
-		$this->db->reconnect();
-
-		$query = $this->db->get ('guru');
-
-		return $query->result();
-	}
-
 	/*	Uses view instead of table. The view has the name of
 	 *	'wali kelas' instead of his/her NIK
 	 */
-	public function get_readable_kelas()
+	public function get_readable_all()
 	{
 		$this->db->reconnect();
 
@@ -54,46 +45,20 @@ class Kelas_Model extends CI_Model {
 	 *		['jurusan'] fills the new record's 'jurusan'
 	 *		['nomor_kelas'] fills the new record's 'nomor_kelas'
 	 *		['tahun_ajar'] fills the new record's 'tahun_ajar'
-	 *	Returns true/false depends on whether the insertion is successful or not
 	 */
 	public function insert ()
 	{
 		$this->db->reconnect();
 
-		if ($this->is_exist() == FALSE)
-		{
-			$data = array (
-					'nik_wali'		=> $this->input->post ('nik_wali'),
-					'tingkat'		=> $this->input->post ('tingkat'),
-					'jurusan'		=> $this->input->post ('jurusan'),
-					'nomor_kelas'	=> $this->input->post ('nomor_kelas'),
-					'tahun_ajar'	=> $this->input->post ('tahun_ajar')
-					);
+		$data = array (
+				'nik_wali'		=> $this->input->post ('nik_wali'),
+				'tingkat'		=> $this->input->post ('tingkat'),
+				'jurusan'		=> $this->input->post ('jurusan'),
+				'nomor_kelas'	=> $this->input->post ('nomor_kelas'),
+				'tahun_ajar'	=> $this->input->post ('tahun_ajar')
+				);
 
-			$this->db->insert ('kelas', $data);
-			return TRUE;
-		}
-		else
-			return FALSE;
-	}
-
-	public function is_exist ()
-	{
-		$this->db->reconnect();
-
-		$this->db->select ('* FROM kelas
-			WHERE
-				tingkat = '		. $this->input->post ('tingkat') . ' AND
-				jurusan = \''		. $this->input->post ('jurusan') . '\' AND
-				nomor_kelas = '	. $this->input->post ('nomor_kelas') . ' AND
-				tahun_ajar = \''	. $this->input->post ('tahun_ajar') . '\''
-				, FALSE);
-		
-		$row = $this->db->get()->row();
-		if (isset ($row))
-			return TRUE;
-		else
-			return false;
+		$this->db->insert ('kelas', $data);
 	}
 
 	/*	Uses $_POST:
