@@ -13,10 +13,12 @@ class Guru extends CI_Controller {
 	{
 		$this->cetak();
 	}
+
     public function tambah()
 	{
 		$this->load->view('');
 	}
+
     public function edit()
 	{
 		$this->load->view('');
@@ -31,25 +33,31 @@ class Guru extends CI_Controller {
         $this->load->view('guru/cetakguru', $data);
         $this->load->view('footer/footer');
 	}
+
     public function hapus()
 	{
 		$this->load->view('');
 	}
+
     public function enroll()
 	{
 		$this->load->view('');
 	}
-	public function verifikasi_guru(){
+
+	public function verifikasi_tambah ()
+	{
 		$this->load->helper('security');
 		$this->load->library('form_validation');
 		$this->form_validation->set_rules('nik', 'NIK', 'trim|required|min_length[6]|max_length[20]|regex_match[/^[0-9]{6,20}$/]');
 		$this->form_validation->set_rules('nama', 'Nama', 'trim|required|min_length[6]|max_length[50]|xss_clean');
 		
-		if($this->form_validation->run() == FALSE){
-			redirect('/home');
-		}else{
+		if ($this->form_validation->run() == TRUE)
+		{
+			$this->Guru_Model->insert();
+			redirect('/guru/cetak');
+		}
+		else
             $this->cetak();
-		}	
 	}
  
 }

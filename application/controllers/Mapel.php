@@ -18,6 +18,7 @@ class Mapel extends CI_Controller {
 	{
 		$this->load->view('');
 	}
+
     public function edit()
 	{
 		$this->load->view('');
@@ -32,26 +33,31 @@ class Mapel extends CI_Controller {
         $this->load->view('mapel/cetakmapel', $data);
         $this->load->view('footer/footer');
 	}
+
     public function hapus()
 	{
 		$this->load->view('');
 	}
+
     public function enroll()
 	{
 		$this->load->view('');
 	}
-    public function verifikasi_mapel(){
+
+    public function verifikasi_tambah()
+	{
 		$this->load->helper('security');
 		$this->load->library('form_validation');
-		$this->form_validation->set_rules('code', 'NIS', 'trim|required|min_length[6]|max_length[20]|xss_clean');
-        $this->form_validation->set_rules('mapel', 'NISN', 'trim|required|min_length[6]|max_length[20]|xss_clean');
-		$this->form_validation->set_rules('year', 'Name', 'trim|required|min_length[6]|max_length[50]|xss_clean');
+		$this->form_validation->set_rules('kode_mapel', 'NIS', 'trim|required|max_length[20]|xss_clean');
+        $this->form_validation->set_rules('nama', 'NISN', 'trim|required|max_length[20]|xss_clean');
         
-		if($this->form_validation->run() == FALSE){
-			redirect('/home');
-		}else{
+		if ($this->form_validation->run() == TRUE)
+		{
+			$this->Mapel_Model->insert();
+			redirect('/mapel/cetak');
+		}
+		else
             $this->cetak();
-		}	
 	}
 
 }
