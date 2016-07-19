@@ -27,7 +27,7 @@ class Mapel extends CI_Controller {
     public function cetak()
 	{
 		$data['mapel'] = $this->Mapel_Model->get_all();
-
+        $data['edit_mapel'] = $this->db->query("select * from mapel");
 		$this->load->view('header/header');
         $this->load->view('navbar/navbar');
         $this->load->view('mapel/cetakmapel', $data);
@@ -54,6 +54,21 @@ class Mapel extends CI_Controller {
 		if ($this->form_validation->run() == TRUE)
 		{
 			$this->Mapel_Model->insert();
+			redirect('/mapel/cetak');
+		}
+		else
+            $this->cetak();
+	}
+     public function verifikasi_edit()
+	{
+		$this->load->helper('security');
+		$this->load->library('form_validation');
+		$this->form_validation->set_rules('kode_mapel', 'trim|required|max_length[30]|xss_clean');
+        $this->form_validation->set_rules('nama', 'trim|required|max_length[30]|xss_clean');
+        
+		if ($this->form_validation->run() == TRUE)
+		{
+			$this->Mapel_Model->update();
 			redirect('/mapel/cetak');
 		}
 		else

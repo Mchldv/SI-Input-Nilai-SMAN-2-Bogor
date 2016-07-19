@@ -36,8 +36,6 @@
       <div class="row">
          <div class="col s12" style="padding: 1em 1em 0 1em">
             <form class="col s12" action="<?php echo base_url();?>kelas/verifikasi_tambah" method="post">
-<<<<<<< HEAD
-=======
                       <div class="input-field col s12">
                          <input name="nik_wali" type="text" class="validate">
                          <label>NIK Wali</label>
@@ -50,7 +48,6 @@
                          <input name="name" type="text" class="validate">
                          <label>Nama Siswa</label>
                       </div>
->>>>>>> 404e20f3bb63b17b64f87161c15d146eb3e9ca98
                       <div class="input-field col s2">
                           <span>Tingkat</span>
                           <select name="tingkat" class="browser-default">
