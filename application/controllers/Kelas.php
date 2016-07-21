@@ -30,6 +30,7 @@ class Kelas extends CI_Controller {
 	{
 		$data['kelas'] = $this->Kelas_Model->get_readable_kelas();
 		$data['guru'] = $this->Kelas_Model->get_guru();
+        $data['edit_kelas'] = $this->db->query("select * from kelas");
 		$data['duplicate_error'] = $this->duplicate;
 		$this->load->view('header/header');
         $this->load->view('navbar/navbar');
