@@ -6,7 +6,7 @@
 				 	<a href="" data-activates="slide-out" class="button-collapse"><img style="width:20px" src="<?php echo base_url();?>assets/assets/interface.png"></a>
 					<a href="<?php echo base_url();?>home" class="brand-logo" style="font-size:1.2em">SMA NEGERI 2 BOGOR</a>
 						<ul class="right hide-on-med-and-down">
-							<li><a href="<?php echo base_url();?>home/opsimatpel" style="font-size:0.9em; ">Penilaian</a></li>
+							<li><a href="<?php echo base_url();?>penilaian/lihat" style="font-size:0.9em; ">Penilaian</a></li>
 							<li><a href="<?php echo base_url();?>kelas/cetak" style="font-size:0.9em; ">Kelas</a></li>
                             <li><a href="<?php echo base_url();?>mapel/cetak" style= "font-size:0.9em; ">Mata Pelajaran</a></li>
                             <li><a href="<?php echo base_url();?>siswa/cetak" style= "font-size:0.9em; ">Siswa</a></li>

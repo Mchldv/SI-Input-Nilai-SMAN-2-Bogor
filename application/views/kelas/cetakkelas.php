@@ -4,7 +4,7 @@
     <?php if ($duplicate_error == true) { ?>
       <h3>ERROR COX</h3>
     <?php } ?>
-    <button class="modal-trigger" href="#tambahkelas">Tambah Kelas</button>
+    <button class="modal-trigger waves-effect waves-light btn" href="#tambahkelas">Tambah Kelas</button>
     <table>
         <thead>
           <tr>
@@ -13,6 +13,7 @@
               <th data-field="id">Kelas</th>
               <th data-field="id">Tahun Ajaran</th>
               <th data-field="price">Edit Kelas</th>
+              <th data-field="price">Hapus Kelas</th>
           </tr>
         </thead>
 
@@ -24,7 +25,8 @@
             <td><?php echo $object->wali_kelas; ?></td>
             <td><?php echo $object->tingkat . ' ' . $object->jurusan . ' ' . $object->nomor_kelas; ?></td>
             <td><?php echo $object->tahun_ajar; ?></td>
-            <td><button class="modal-trigger" href="#loginmodal">Edit</button></td>
+            <td><button class="modal-trigger waves-effect waves-light btn" href="#loginmodal">Edit</button></td>
+            <td><a href="#" class="waves-effect waves-light btn">Hapus</a></td>
           </tr>
         <?php } ?>
         </tbody>

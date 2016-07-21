@@ -1,14 +1,15 @@
 <div class="container">
-    <h1>SISWA SMAN 2 BOGOR</h1>
+    <h1>Siswa SMAN 2 Bogor</h1>
     <?php echo validation_errors(); ?>
-    <button class="modal-trigger" href="#inputsiswa">Tambah Siswa</button>
+    <button class="modal-trigger waves-effect waves-light btn" href="#inputsiswa">Tambah Siswa</button>
     <table>
         <thead>
           <tr>
               <th data-field="id">NISN</th>
               <th data-field="id">NIS</th>
               <th data-field="id">Nama Siswa</th>
-              <th data-field="id">Ubah Data Siswa</th>
+              <th data-field="id">Ubah Data</th>
+              <th data-field="id">Hapus Data</th>
           </tr>
         </thead>
         <tbody>
@@ -18,7 +19,8 @@
             <td><?php echo $object->nisn; ?></td>
             <td><?php echo $object->nis; ?></td>
             <td><?php echo $object->nama; ?></td>
-            <td><button class="modal-trigger" href="#ubahsiswa">Ubah</button></td>
+            <td><button class="modal-trigger waves-effect waves-light btn" href="#ubahsiswa">Ubah</button></td>
+            <td><a href="#" class="waves-effect waves-light btn">Hapus</a></td>
           <tr>
         <?php } ?>
         </tbody>

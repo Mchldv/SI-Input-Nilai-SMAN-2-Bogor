@@ -1,12 +1,13 @@
 <div class="container">
     <h1>Daftar Guru</h1>
-    <button class="modal-trigger" href="#tambahguru">Tambah Siswa</button>
+    <button class="modal-trigger waves-effect waves-light btn" href="#tambahguru">Tambah Siswa</button>
     <table>
         <thead>
           <tr>
               <th data-field="id">NIK</th>
               <th data-field="id">Nama Lengkap</th>
-              <th data-field="price">Edit Data Guru</th>
+              <th data-field="price">Edit Data</th>
+              <th data-field="price">Hapus Data</th>
           </tr>
         </thead>
 
@@ -16,7 +17,8 @@
           <tr>
             <td><?php echo $object->nik; ?></td>
             <td><?php echo $object->nama; ?></td>
-            <td><button class="modal-trigger" href="#editguru">Edit</button></td>
+            <td><button class="modal-trigger waves-effect waves-light btn" href="#editguru">Edit</button></td>
+            <td><a href="#" class="waves-effect waves-light btn">Hapus</a></td>
           </tr>
         <?php } ?>
         </tbody>
@@ -37,7 +39,7 @@
                          <label>Nama Lengkap</label>
                       </div>
                       <div class="col s12" style="margin-top: 1.25em">
-                         <button type="submit" class="waves-effect waves-light btn">UBAH</button>
+                         <button type="submit" class="waves-effect waves-light btn">TAMBAH</button>
                       </div>
             </form>
          </div>
