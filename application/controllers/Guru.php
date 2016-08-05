@@ -18,12 +18,6 @@ class Guru extends CI_Controller {
 	{
 		$this->load->view('');
 	}
-
-    public function edit()
-	{
-		$this->load->view('');
-	}
-
     public function cetak()
 	{
 		$data['guru'] = $this->Guru_Model->get_all();
@@ -34,9 +28,13 @@ class Guru extends CI_Controller {
         $this->load->view('footer/footer');
 	}
 
-    public function hapus()
+    public function edit($nik)
 	{
-		$this->load->view('');
+        //$data['update'] = $this->Guru_Model->update('$nik');
+        $this->load->view('header/header');
+        $this->load->view('navbar/navbar');
+        $this->load->view('guru/editguru');
+        $this->load->view('footer/footer');
 	}
 
     public function enroll()

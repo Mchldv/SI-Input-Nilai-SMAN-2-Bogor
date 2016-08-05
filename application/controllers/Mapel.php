@@ -19,9 +19,12 @@ class Mapel extends CI_Controller {
 		$this->load->view('');
 	}
 
-    public function edit()
+    public function edit($kode_mapel)
 	{
-		$this->load->view('');
+		$this->load->view('header/header');
+        $this->load->view('navbar/navbar');
+        $this->load->view('mapel/editmapel');
+        $this->load->view('footer/footer');
 	}
 
     public function cetak()

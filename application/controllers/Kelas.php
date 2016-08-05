@@ -21,9 +21,12 @@ class Kelas extends CI_Controller {
 		$this->load->view('');
 	}
 
-    public function edit()
+    public function edit($nike_wali_kelas)
 	{
-		$this->load->view('');
+		$this->load->view('header/header');
+        $this->load->view('navbar/navbar');
+        $this->load->view('kelas/editkelas');
+        $this->load->view('footer/footer');
 	}
 
     public function cetak()

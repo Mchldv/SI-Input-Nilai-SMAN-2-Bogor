@@ -43,7 +43,7 @@ class Guru_Model extends CI_Model {
 
 		return $query->result();
 	}
-
+    
 	/*	Uses $_POST:
 	 *		['nik'] fills the new record's 'nik'
 	 *		['nama'] fills the new record's 'nama'
@@ -63,7 +63,7 @@ class Guru_Model extends CI_Model {
 	 *		['new_nik'] will fill the record's 'nik' . By default should have the same value as 'originalNik'
 	 *		['nama'] will fill the record's 'nama'
 	 */
-	public function update ()
+	public function update ($nik)
 	{
 		$this->db->reconnect();
 

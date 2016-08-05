@@ -25,7 +25,7 @@
             <td><?php echo $object->wali_kelas; ?></td>
             <td><?php echo $object->tingkat . ' ' . $object->jurusan . ' ' . $object->nomor_kelas; ?></td>
             <td><?php echo $object->tahun_ajar; ?></td>
-            <td><button class="modal-trigger waves-effect waves-light btn" href="#loginmodal">Edit</button></td>
+            <td><a class="waves-effect waves-light btn" href="<?php echo base_url();?>kelas/edit/<?php echo $object->nik_wali_kelas;?>">Edit</a></td>
             <td><a href="#" class="waves-effect waves-light btn">Hapus</a></td>
           </tr>
         <?php } ?>

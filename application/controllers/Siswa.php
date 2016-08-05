@@ -19,9 +19,12 @@ class Siswa extends CI_Controller {
 		$this->load->view('');
 	}
 
-    public function edit()
+    public function edit($nisn)
 	{
-		$this->load->view('');
+		$this->load->view('header/header');
+        $this->load->view('navbar/navbar');
+        $this->load->view('siswa/cetaksiswa');
+        $this->load->view('footer/footer');
 	}
 
     public function cetak()

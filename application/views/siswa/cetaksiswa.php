@@ -19,7 +19,7 @@
             <td><?php echo $object->nisn; ?></td>
             <td><?php echo $object->nis; ?></td>
             <td><?php echo $object->nama; ?></td>
-            <td><button class="modal-trigger waves-effect waves-light btn" href="#ubahsiswa">Ubah</button></td>
+            <td><a class="modal-trigger waves-effect waves-light btn" href="<?php echo base_url();?>mapel/edit/<?php echo $object->nisn;?>">Ubah</a></td>
             <td><a href="#" class="waves-effect waves-light btn">Hapus</a></td>
           <tr>
         <?php } ?>

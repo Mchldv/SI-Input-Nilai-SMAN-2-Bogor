@@ -13,18 +13,16 @@
                             <li><a href="<?php echo base_url();?>guru/cetak" style= "font-size:0.9em; ">Guru</a></li>
 						</ul> 
 						<ul id="slide-out" class="side-nav">
-							<li><a href="">Penilaian</a></li>
-							<li><a href="" style="font-size:0.9em; ">Kelas</a></li>
-                            <li><a href="" style= "font-size:0.9em; ">Mata Pelajaran</a></li>
-                            <li><a href="" style= "font-size:0.9em; ">Siswa</a></li>
-                            <li><a href="" style= "font-size:0.9em; ">Guru</a></li>
+							<li><a href="<?php echo base_url();?>penilaian/lihat">Penilaian</a></li>
+							<li><a href="<?php echo base_url();?>kelas/cetak" style="font-size:0.9em; ">Kelas</a></li>
+                            <li><a href="<?php echo base_url();?>mapel/cetak" style= "font-size:0.9em; ">Mata Pelajaran</a></li>
+                            <li><a href="<?php echo base_url();?>siswa/cetak" style= "font-size:0.9em; ">Siswa</a></li>
+                            <li><a href="<?php echo base_url();?>guru/cetak" style= "font-size:0.9em; ">Guru</a></li>
 				        </ul>
 				 </div>
               </div>
 			</nav>
 		</div>
-
-
     </div>
   </div>
   

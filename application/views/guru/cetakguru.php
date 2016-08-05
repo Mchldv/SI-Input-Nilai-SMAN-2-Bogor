@@ -17,7 +17,7 @@
           <tr>
             <td><?php echo $object->nik; ?></td>
             <td><?php echo $object->nama; ?></td>
-            <td><button class="modal-trigger waves-effect waves-light btn" href="#editguru">Edit</button></td>
+            <td><a class="waves-effect waves-light btn" href="<?php echo base_url();?>guru/edit/<?php echo $object->nik;?>">Edit</a></td>
             <td><a href="#" class="waves-effect waves-light btn">Hapus</a></td>
           </tr>
         <?php } ?>
@@ -44,7 +44,6 @@
             </form>
          </div>
       </div>
- 
     </div>
 </div>
 

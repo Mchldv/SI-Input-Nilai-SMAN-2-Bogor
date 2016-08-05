@@ -18,7 +18,7 @@
           <tr>
             <td><?php echo $object->kode_mapel; ?></td>
             <td><?php echo $object->nama; ?></td>
-            <td><button class="modal-trigger waves-effect waves-light btn" href="#editmatpel">Edit</button></td>
+            <td><a class="waves-effect waves-light btn" href="<?php echo base_url();?>mapel/edit/<?php echo $object->kode_mapel;?>">Edit</a></td>
           </tr>
         <?php } ?>
         </tbody>
