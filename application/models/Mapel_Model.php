@@ -38,6 +38,17 @@ class Mapel_Model extends CI_Model {
 		$this->db->insert ('mapel', $data);
 	}
 
+	public function choose_class ()
+	{
+		$this->db->reconnect();
+
+		$data = array (
+				'kode_mapel' => $this->input->post ('kode_mapel'),
+				'nama'		 => $this->input->post ('nama')
+				);
+
+		$this->db->insert ('mapel', $data);
+	}
 	/*	Uses $_POST:
 	 *		['original_kode_mapel'] used to point which record will be changed
 	 *		['new_kode_mapel'] will fill the record's 'kode_mapel'. By default should have the same value

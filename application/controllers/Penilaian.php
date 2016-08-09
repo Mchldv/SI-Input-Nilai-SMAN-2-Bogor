@@ -21,7 +21,13 @@ class Penilaian extends CI_Controller {
         $this->load->view('penilaian/inputnilai');
         $this->load->view('footer/footer');
 	}
-
+    
+	public function pilihkelas(){
+		$id_=$this->input->post('categoryId');
+		$data['sub'] = $this->db->query('SELECT * FROM `detail_kelas` WHERE nisn = (select nisn from `detail_mapel` where kode_mapel = (select kode_mapel from `mapel` where kode_mapel = id_))');
+		$this->load->view('Penilaian/pilihkelas', $data);
+	}
+    
     public function edit()
 	{
 		$this->load->view('header/header');

@@ -134,3 +134,21 @@
         complete: function() { alert('Closed'); } 
 	  });
 </script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $('#type').on("change",function () {
+    		$('#size').html("");
+            var categoryId = $(this).find('option:selected').val();
+        $.ajax({
+            url: "<?php echo base_url();?>Penilaian/pilihkelas",
+            type: "POST",
+            data: "categoryId="+categoryId,
+            success: function (response) {
+                $('#type1').html(response);
+                console.log(response);
+            },
+        });
+    }); 
+});
+</script>
