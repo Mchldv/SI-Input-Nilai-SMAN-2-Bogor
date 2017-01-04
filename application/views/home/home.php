@@ -79,8 +79,12 @@
         
             <div class="col m4 offset-m4 s12">
                 <div class="textbox">
-                    <a href="<?php echo base_url();?>home/opsi">silahkan masuk</a>
+                    <a href="<?php echo base_url();?>nilai/import">Import Nilai</a>
                 </div>
+                <div class="textbox">
+                    <a href="<?php echo base_url();?>nilai/kolektif">Lihat Nilai</a>
+                </div>
+
             </div>
         </div>
     </div>
