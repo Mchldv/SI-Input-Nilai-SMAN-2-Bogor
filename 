@@ -1,0 +1,290 @@
+[33mcommit ab9ae46684791ada470eb66b54e9fc7db2511ec5[m
+Author: mghazian <muhghazian@gmail.com>
+Date:   Mon Jul 18 18:24:51 2016 +0700
+
+    Further form improvement
+
+[33mcommit 4a24b7fe8db88223e10342bf67b7ef94da9a4cc6[m
+Merge: c9271b8 674b938
+Author: mghazian <muhghazian@gmail.com>
+Date:   Thu Jul 14 16:08:57 2016 +0700
+
+    Merge: Penilaian view halfway done
+
+[33mcommit c9271b82312375f084ddbca71a25479f0f2e2f76[m
+Author: mghazian <muhghazian@gmail.com>
+Date:   Thu Jul 14 16:08:10 2016 +0700
+
+    Penilaian halfway done
+
+[33mcommit 674b93816fa57bcfb1295ed45da5b234e372072d[m
+Author: khairytamim <fikry.labsky08@gmail.com>
+Date:   Thu Jul 14 14:45:08 2016 +0700
+
+    merapihkan penilaian dan juga pengubahan warna di css
+
+[33mcommit 29621c23fc4a06515294e177c0b671dff8b30861[m
+Author: khairytamim <fikry.labsky08@gmail.com>
+Date:   Wed Jul 13 20:20:15 2016 +0700
+
+    submit penilaian buat cek nilai
+
+[33mcommit a10c016457972626613849de7b747ca397261be6[m
+Author: mghazian <muhghazian@gmail.com>
+Date:   Sat Jul 9 22:55:23 2016 +0700
+
+    View matches with real data
+
+[33mcommit 25f32b2c75fc33bf84aeeb5571aad4056a26dc6f[m
+Author: khairytamim <fikry.labsky08@gmail.com>
+Date:   Fri Jul 8 16:33:19 2016 +0700
+
+    ngerubah bagian penilaiann, masih bingung buat submitnya gmn
+
+[33mcommit 74f221434dda591ef190b65ae7963173b2398b91[m
+Author: khairytamim <fikry.labsky08@gmail.com>
+Date:   Sat Jun 25 11:11:13 2016 +0700
+
+    konfirmasi hapus feature added
+
+[33mcommit 9ddda1438767832a50380e39bdaf56d6fe33d106[m
+Author: khairytamim <fikry.labsky08@gmail.com>
+Date:   Fri Jun 24 22:11:18 2016 +0700
+
+    penambahan fitur sesuai dengan chat fb ghazian
+
+[33mcommit e824c9c7aa9ed30a0cd71eb8fc23d7336f77ab32[m
+Author: khairytamim <fikry.labsky08@gmail.com>
+Date:   Fri May 13 14:22:07 2016 +0700
+
+    ngilangin conflictnya
+
+[33mcommit a48fbc7878f169adda8404f7de394ac1b8bb08b3[m
+Merge: b94b424 5a977db
+Author: mghazian <muhghazian@gmail.com>
+Date:   Thu May 12 19:25:04 2016 +0700
+
+    Merge remote-tracking branch 'origin/master'
+    
+    # Conflicts:
+    #	application/views/kelas/cetakkelas.php
+    #	application/views/mapel/cetakmapel.php
+
+[33mcommit 5a977dbad232757d799f6a4ebeaf829369bf0608[m
+Author: khairytamim <fikry.labsky08@gmail.com>
+Date:   Tue May 10 16:51:07 2016 +0700
+
+    sebagian besar udah bisa form validationnya, tapi masih ada error
+
+[33mcommit 2336af0e66dbcb02a8de7b45798071b70da23236[m
+Merge: 25fbc03 29edf27
+Author: khairytamim <fikry.labsky08@gmail.com>
+Date:   Tue May 10 10:37:48 2016 +0700
+
+    Merge branch 'master' of https://github.com/mghazian/SI-Input-Nilai-SMAN-2-Bogor
+
+[33mcommit 25fbc03e924bb9d75b30fd74c801e9f8f7f944a3[m
+Merge: 3151a72 7124d9f
+Author: khairytamim <fikry.labsky08@gmail.com>
+Date:   Tue May 10 10:37:41 2016 +0700
+
+    Merge branch 'master' of https://github.com/mghazian/SI-Input-Nilai-SMAN-2-Bogor
+    
+    # Conflicts:
+    #	application/views/guru/cetakguru.php
+    #	application/views/kelas/cetakkelas.php
+    #	application/views/mapel/cetakmapel.php
+    #	application/views/siswa/cetaksiswa.php
+
+[33mcommit b94b424e53c9f470f00542d5d44a5b9a94bc6e05[m
+Author: mghazian <muhghazian@gmail.com>
+Date:   Tue May 10 00:34:17 2016 +0700
+
+    Conflict fix
+
+[33mcommit 29edf27c4a7e171f65d46969e08259028e8aa2c9[m
+Author: mghazian <muhghazian@gmail.com>
+Date:   Mon May 9 22:51:25 2016 +0700
+
+    Updated form format
+
+[33mcommit e0e2ada05ba65ae341e7363cbc5158c434e7ba44[m
+Author: mghazian <muhghazian@gmail.com>
+Date:   Mon May 9 22:50:53 2016 +0700
+
+    Updated view
+
+[33mcommit e2e7743fe1f48ab2e8437afb837d8dc10e2919f1[m
+Author: mghazian <muhghazian@gmail.com>
+Date:   Mon May 9 22:49:22 2016 +0700
+
+    Updated view
+
+[33mcommit 3151a724958511ae23ffb4bb31b55bc648f92a29[m
+Author: khairytamim <fikry.labsky08@gmail.com>
+Date:   Mon May 9 16:39:25 2016 +0700
+
+    tadi udah ngubah sesuai notepad
+
+[33mcommit 7124d9f11ca72a84af3f72b9d904b5178f49ede3[m
+Author: mghazian <muhghazian@gmail.com>
+Date:   Mon May 9 14:30:34 2016 +0700
+
+    Updated changelog
+
+[33mcommit 47a6a3c78c7702ad85bb8d50b125a882f443b298[m
+Merge: 49ebe1e 53dc8f2
+Author: mghazian <muhghazian@gmail.com>
+Date:   Mon May 9 14:10:57 2016 +0700
+
+    Merge pull request #4 from mghazian/mghazian-patch-1
+    
+    Mghazian patch 1
+
+[33mcommit 53dc8f2a278d9ad0c77eb13dc0c5b70c95d47e26[m
+Author: mghazian <muhghazian@gmail.com>
+Date:   Mon May 9 14:07:55 2016 +0700
+
+    Updated view
+
+[33mcommit 6156231ac357332e15272a828b87c855879e1bac[m
+Author: mghazian <muhghazian@gmail.com>
+Date:   Mon May 9 14:07:19 2016 +0700
+
+    Updated view
+
+[33mcommit 9088200a43903371a63757f47473d7ad29b459a7[m
+Author: mghazian <muhghazian@gmail.com>
+Date:   Mon May 9 14:05:10 2016 +0700
+
+    Updated view
+
+[33mcommit 962013e28ab7fd29d5e8a07549989fc7e663a6b9[m
+Author: mghazian <muhghazian@gmail.com>
+Date:   Mon May 9 13:58:40 2016 +0700
+
+    Updated view
+
+[33mcommit 0cbe1db0c72d3b512eb6186a981083895fe1265e[m
+Author: mghazian <muhghazian@gmail.com>
+Date:   Mon May 9 13:58:02 2016 +0700
+
+    Updated view
+
+[33mcommit 0d6b36a57e7c86638aefce8776c32029cdf18a3b[m
+Author: mghazian <muhghazian@gmail.com>
+Date:   Mon May 9 13:54:19 2016 +0700
+
+    Updated models
+
+[33mcommit ff6c7974682c35420d47749c0a8eaf67b4157b96[m
+Author: mghazian <muhghazian@gmail.com>
+Date:   Mon May 9 13:43:40 2016 +0700
+
+    Updated controller
+
+[33mcommit 00777be841111909fe4621df81d2f10df56abd01[m
+Author: mghazian <muhghazian@gmail.com>
+Date:   Mon May 9 13:36:48 2016 +0700
+
+    Added files via upload
+
+[33mcommit 49ebe1e130d1d607292fb1eaf6c4f6391e7875a8[m
+Author: mghazian <muhghazian@gmail.com>
+Date:   Mon May 9 13:31:27 2016 +0700
+
+    Delete database.php
+
+[33mcommit d632a7e6c4059cf274c07d07fc8e5066e660ba42[m
+Author: mghazian <muhghazian@gmail.com>
+Date:   Mon May 9 13:31:14 2016 +0700
+
+    Delete cetaksiswa.php
+
+[33mcommit 3813bc89d2c50e4d7bbeb37f45c2ace66430c400[m
+Author: mghazian <muhghazian@gmail.com>
+Date:   Mon May 9 13:31:05 2016 +0700
+
+    Delete cetaknilai.php
+
+[33mcommit 570725c5fcc939db229fcc7ff4cab879581b3e4b[m
+Author: mghazian <muhghazian@gmail.com>
+Date:   Mon May 9 13:30:57 2016 +0700
+
+    Delete cetakmapel.php
+
+[33mcommit bd669726202e424af0e7eec188976d729b9abad4[m
+Author: mghazian <muhghazian@gmail.com>
+Date:   Mon May 9 13:30:48 2016 +0700
+
+    Delete cetakkelas.php
+
+[33mcommit 72ea1a2cf12b268a35c67f2dddf9198feb148213[m
+Author: mghazian <muhghazian@gmail.com>
+Date:   Mon May 9 13:30:38 2016 +0700
+
+    Delete cetakguru.php
+
+[33mcommit 371ea32ff7b774ef07ee5300cf567485b9d3f16a[m
+Author: mghazian <muhghazian@gmail.com>
+Date:   Mon May 9 13:30:29 2016 +0700
+
+    Delete Siswa_Model.php
+
+[33mcommit b1bfd21196815586bde8218e355168384347c6c4[m
+Author: mghazian <muhghazian@gmail.com>
+Date:   Mon May 9 13:30:02 2016 +0700
+
+    Delete Siswa.php
+
+[33mcommit 6a9b8d3acefa71b8259ae6dfe1d469ba925c5561[m
+Author: mghazian <muhghazian@gmail.com>
+Date:   Mon May 9 13:29:49 2016 +0700
+
+    Delete Penilaian_Model.php
+
+[33mcommit fe47599b019216013edc9ab1bd005aa67627f8b9[m
+Author: mghazian <muhghazian@gmail.com>
+Date:   Mon May 9 13:29:40 2016 +0700
+
+    Delete Penilaian.php
+
+[33mcommit fee48df2b81ffe21f73bc62018242475a764fb51[m
+Author: mghazian <muhghazian@gmail.com>
+Date:   Mon May 9 13:29:15 2016 +0700
+
+    Delete Mapel_Model.php
+
+[33mcommit 660bd663193e64a255d0c3ab95c8fd2eb836a825[m
+Author: mghazian <muhghazian@gmail.com>
+Date:   Mon May 9 13:29:07 2016 +0700
+
+    Delete Mapel.php
+
+[33mcommit 00f29a8019c74e45a650dbad27b513c585302b46[m
+Author: mghazian <muhghazian@gmail.com>
+Date:   Mon May 9 13:28:54 2016 +0700
+
+    Delete Kelas_Model.php
+
+[33mcommit a38e85c2dc4ff967a0e317da5dc9e8471cc0c63a[m
+Author: mghazian <muhghazian@gmail.com>
+Date:   Mon May 9 13:28:45 2016 +0700
+
+    Delete Kelas.php
+
+[33mcommit 03a730b16d8a5681fd581e4993427eca0fe2eb69[m
+Author: mghazian <muhghazian@gmail.com>
+Date:   Mon May 9 13:28:34 2016 +0700
+
+    Delete Home.php
+
+[33mcommit 0372b90116889b6df815a20ed2efe0708617be2b[m
+Author: mghazian <muhghazian@gmail.com>
+Date:   Mon May 9 13:28:26 2016 +0700
+
+    Delete Guru.php
+
+[33mcommit e8e3c39de676ad9ea632d1cb0a1e0c12b5918254[m
+Author: mghazian <muhghazian@gmail.com>
+Date:   Mon May 

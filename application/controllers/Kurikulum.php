@@ -6,7 +6,7 @@ class Kurikulum extends CI_Controller {
 	public function __construct ()
 	{
 		parent::__construct();
-		//$this->load->model ('Mapel_Model');
+		$this->load->model ('mapel_model');
 	}
 
 	public function index()
@@ -29,8 +29,8 @@ class Kurikulum extends CI_Controller {
 
     public function cetak()
 	{
-		$data['mapel'] = $this->Mapel_Model->get_all();
-        $data['edit_mapel'] = $this->db->query("select * from mapel");
+		$data['mapel'] = $this->mapel_model->get_all()['record'];
+        //$data['edit_mapel'] = $this->db->query("select * from mapel");
 		$this->load->view('header/header');
         $this->load->view('navbar/navbar');
         $this->load->view('mapel/cetakmapel', $data);
