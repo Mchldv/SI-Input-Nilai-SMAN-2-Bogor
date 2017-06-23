@@ -42,7 +42,8 @@ class Generic_model extends CI_Model {
 	 */
 	protected function result_wrapper ($query_result)
 	{
-		if ( ! is_array ($query_result ) )
+		$output = array();
+		if ( ! isset ($query_result ) )
 			return NULL;
 		
 		$output['count'] = $query_result->num_rows();
