@@ -6,7 +6,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<meta name="google-site-verification" content="iXeuDSWh4LPaiEFS54cAl5IWL1JyGEuqh-KAXFRFH_Q"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
          
-        <title><?php if(isset($title)) echo $title;?></title>    
+    <title><?php if(isset($title)) echo $title;?></title>    
 	<!--Import materialize.css-->
 	<link rel="stylesheet" href="<?php echo base_url();?>assets/css/materialize.css"  media="screen,projection" type="text/css"/>
 	<!--technical meta-->

@@ -33,7 +33,7 @@ class Kurikulum extends CI_Controller {
         //$data['edit_mapel'] = $this->db->query("select * from mapel");
 		$this->load->view('header/header');
         $this->load->view('navbar/navbar');
-        $this->load->view('mapel/cetakmapel', $data);
+        $this->load->view('mapel/cetakmapel.php', $data);
         $this->load->view('footer/footer');
 	}
 

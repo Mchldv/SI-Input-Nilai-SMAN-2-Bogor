@@ -1,24 +1,22 @@
 <body>
-		<div class="navbar-fixed" style="height:3.7em;">
-			<nav style="background-color: #ffffff; height:3.7em; border-bottom: solid 0.35em #000000"><!--#003a75-->
-			  <div class="container">
-				 <div class="nav-wrapper" style="line-height:3.4em">
-				 	<a href="" data-activates="slide-out" class="button-collapse"><img style="width:20px" src="<?php echo base_url();?>assets/assets/interface.png"></a>
-					<a href="<?php echo base_url();?>home/opsi" class="brand-logo" style="font-size:1.2em">SMA NEGERI 2 BOGOR</a>
-						<ul class="right hide-on-med-and-down">
-							<li><a href="<?php echo base_url();?>penilaian/lihat" style="font-size:0.9em; ">Import</a></li>
-							<li><a href="<?php echo base_url();?>nilai/kolektif" style="font-size:0.9em; ">Nilai</a></li>
-						</ul> 
-						<ul id="slide-out" class="side-nav">
-							<li><a href="<?php echo base_url();?>penilaian/lihat">Import</a></li>
-							<li><a href="<?php echo base_url();?>nilai/kolektif" style="font-size:0.9em; ">Nilai</a></li>
-				        </ul>
-				 </div>
-              </div>
-			</nav>
-		</div>
-    </div>
-  </div>
+	<div class="navbar-fixed" style="height:3.7em;">
+		<nav style="background-color: #ffffff; height:3.7em; border-bottom: solid 0.35em #000000"><!--#003a75-->
+		  <div class="container">
+			 <div class="nav-wrapper" style="line-height:3.4em">
+			 	<a href="" data-activates="slide-out" class="button-collapse"><img style="width:20px" src="<?php echo base_url();?>assets/assets/interface.png"></a>
+				<a href="<?php echo base_url();?>home/opsi" class="brand-logo" style="font-size:1.2em">SMA NEGERI 2 BOGOR</a>
+					<ul class="right hide-on-med-and-down">
+						<li><a href="<?php echo base_url();?>penilaian/lihat" style="font-size:0.9em; ">Import</a></li>
+						<li><a href="<?php echo base_url();?>nilai/kolektif" style="font-size:0.9em; ">Nilai</a></li>
+					</ul> 
+					<ul id="slide-out" class="side-nav">
+						<li><a href="<?php echo base_url();?>penilaian/lihat">Import</a></li>
+						<li><a href="<?php echo base_url();?>nilai/kolektif" style="font-size:0.9em; ">Nilai</a></li>
+			        </ul>
+			 </div>
+          </div>
+		</nav>
+	</div>
   
 
 	

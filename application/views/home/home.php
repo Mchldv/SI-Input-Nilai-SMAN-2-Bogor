@@ -43,13 +43,13 @@
             <h1><b>sistem informasi</b></h1>
             <h5>SMA NEGERI 2 BOGOR</h5>
             <div class="col s12">
-                <a class="waves-effect waves-light btn-large" href="<?php echo base_url();?>siswa">DASHBOARD DATA SISWA</a>
+                <a class="waves-effect waves-light btn-large" href="<?php echo base_url();?>Siswa">DASHBOARD DATA SISWA</a>
             </div>
             <div class="col s12">
-                <a class="waves-effect waves-light btn-large" href="<?php echo base_url();?>kurikulum">DASHBOARD KURIKULUM</a>
+                <a class="waves-effect waves-light btn-large" href="<?php echo base_url();?>Kurikulum">DASHBOARD KURIKULUM</a>
             </div>
             <div class="col s12">
-                <a class="waves-effect waves-light btn-large" href="<?php echo base_url();?>siswa">DASHBOARD NILAI SISWA</a>
+                <a class="waves-effect waves-light btn-large" href="<?php echo base_url();?>Nilai">DASHBOARD NILAI SISWA</a>
             </div>
         </div>
     </div>

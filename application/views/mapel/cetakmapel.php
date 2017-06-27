@@ -1,5 +1,3 @@
-
-<!--p>list semua mata pelajaran, kalo diklik</p-->
 <div class="container">
     <h1>Tambah Mata Pelajaran</h1>
     <button class="modal-trigger waves-effect waves-light btn" href="#inputmapel">Tambah Mata pelajaran</button>
@@ -22,8 +20,9 @@
           </tr>
         <?php } ?>
         </tbody>
-      </table>
+    </table>
 </div> 
+
 <div id="inputmapel" class="modal">
     <div class="modal-content">
       <div class="row">
@@ -47,9 +46,9 @@
     </div>
 </div>
 
-<div id="editmatpel" class="modal">
+<?php 
+/*<div id="editmatpel" class="modal">
     <div class="modal-content">
-    <!--
     <?php  
         foreach ($edit_mapel->result() as $row)  
         {  
@@ -72,12 +71,12 @@
                 </div>
             </div>
         <?php }?>
-        -->
+        >
     </div>
-</div>
+</div>*/?>
+
 <script>
-    	  $(document).ready(function(){
-	    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    	$(document).ready(function(){
 	    $('.modal-trigger').leanModal();
         complete: function() { alert('Closed'); } 
 	  });

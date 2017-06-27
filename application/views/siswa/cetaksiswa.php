@@ -20,8 +20,9 @@
             <td><a href="#" class="waves-effect waves-light btn">Hapus</a></td>
           <tr>
         </tbody>
-      </table>
+    </table>
 </div>
+
 <div id="inputsiswa" class="modal">
     <div class="modal-content">
       <div class="row">
@@ -47,6 +48,7 @@
       </div>
     </div>
 </div>
+
 <div id="ubahsiswa" class="modal">
     <div class="modal-content">
       <div class="row">
@@ -101,8 +103,7 @@
 </div>
 
 <script>
-    	  $(document).ready(function(){
-	    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    	$(document).ready(function(){
 	    $('.modal-trigger').leanModal();
         complete: function() { alert('Closed'); } 
 	  });

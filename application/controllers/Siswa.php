@@ -18,7 +18,7 @@ class Siswa extends CI_Controller {
 	{
 		$this->load->view('header/header');
         $this->load->view('navbar/navbar');
-        $this->load->view('siswa/cetaksiswa');
+        //$this->load->view('siswa/cetaksiswa');
         $this->load->view('footer/footer');
 	}
 
