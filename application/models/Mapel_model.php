@@ -33,8 +33,9 @@ class Mapel_model extends Generic_model {
 
 	///--------------------------GETTERS-----------------------------///
 
-	public function get_all ()
+	public function get_all ($id)
 	{
+		$this->db->where ('id_kurikulum', $id);		
 		$query = $this->db->get('ref_mata_pelajaran');
 		
 		return $query->result_array();

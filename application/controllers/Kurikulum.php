@@ -6,40 +6,47 @@ class Kurikulum extends CI_Controller {
 	public function __construct ()
 	{
 		parent::__construct();
-		$this->load->model ('mapel_model');
+		$this->load->model ('kurikulum_model');
 	}
 
 	public function index()
 	{
-		$this->cetak();
+		$data=null;
+		$this->cetak($data);
 	}
 
-    public function tambah()
-	{
-		$this->load->view('');
-	}
-
-    public function edit($kode_mapel)
+    public function tambah($data=null)
 	{
 		$this->load->view('header/header');
         $this->load->view('navbar/navbar');
-        $this->load->view('mapel/editmapel');
+        $this->load->view('kurikulum/tambahkurikulum',$data);
         $this->load->view('footer/footer');
 	}
 
-    public function cetak()
+    public function edit($kode_kurikulum)
 	{
-		$data['mapel'] = $this->mapel_model->get_all();
+		$data['kurikulum'] = $this->kurikulum_model->get_id($kode_kurikulum);
+
+		$this->load->view('header/header');
+        $this->load->view('navbar/navbar');
+        $this->load->view('kurikulum/editkurikulum',$data);
+        $this->load->view('footer/footer');
+	}
+
+    public function cetak($data=null)
+	{
+		$data['kurikulum'] = $this->kurikulum_model->get_all();
         //$data['edit_mapel'] = $this->db->query("select * from mapel");
 		$this->load->view('header/header');
         $this->load->view('navbar/navbar');
-        $this->load->view('mapel/cetakmapel.php', $data);
+        $this->load->view('kurikulum/cetakkurikulum.php', $data);
         $this->load->view('footer/footer');
 	}
 
-    public function hapus()
+    public function hapus($id)
 	{
-		$this->load->view('');
+		$this->kurikulum_model->delete($id);
+		$this->cetak();
 	}
 
     public function enroll()
@@ -49,33 +56,45 @@ class Kurikulum extends CI_Controller {
 
     public function verifikasi_tambah()
 	{
+		$input = $this->input->post('nama');
 		$this->load->helper('security');
 		$this->load->library('form_validation');
-		$this->form_validation->set_rules('kode_mapel', 'NIS', 'trim|required|max_length[20]|xss_clean');
-        $this->form_validation->set_rules('nama', 'NISN', 'trim|required|max_length[20]|xss_clean');
+		$this->form_validation->set_rules('nama', 'Nama Kurikulum','required|max_length[20]|xss_clean');
         
+
 		if ($this->form_validation->run() == TRUE)
 		{
-			$this->Mapel_Model->insert();
-			redirect('/mapel/cetak');
+			$this->kurikulum_model->insert($input);
+			$data['error']="sukses";
+			$this->cetak($data);
 		}
 		else
-            $this->cetak();
-	}
+		{
+            $data['error']="gagal";
+            $this->tambah($data);
+        }
+        //var_dump($data['error']);
+        //exit();
+    }
      public function verifikasi_edit()
 	{
+		$data['nama'] = $this->input->post('nama');
+		$data['id'] = $this->input->post('id');
+		$id['id']=$data['id'];
 		$this->load->helper('security');
 		$this->load->library('form_validation');
-		$this->form_validation->set_rules('kode_mapel', 'trim|required|max_length[30]|xss_clean');
-        $this->form_validation->set_rules('nama', 'trim|required|max_length[30]|xss_clean');
+		$this->form_validation->set_rules('nama', 'Nama Kurikulum','required|max_length[20]|xss_clean');
         
 		if ($this->form_validation->run() == TRUE)
 		{
-			$this->Mapel_Model->update();
-			redirect('/mapel/cetak');
+			$this->kurikulum_model->update($data,$id);
+			$data['error']="sukses";
 		}
 		else
-            $this->cetak();
+            $data['error']="gagal";
+        //var_dump($data['error']);
+        //exit();
+        $this->cetak($data);
 	}
 
 }

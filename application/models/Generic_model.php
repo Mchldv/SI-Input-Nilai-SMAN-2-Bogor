@@ -30,7 +30,10 @@ class Generic_model extends CI_Model {
 			if (array_key_exists ($k, $array))
 				$array = array_diff_key ($array, array ($k => NULL));
 		}
-		
+		/*var_dump($array);
+		var_dump($key);
+		exit();
+		*/
 		return $array;
 	}
 
