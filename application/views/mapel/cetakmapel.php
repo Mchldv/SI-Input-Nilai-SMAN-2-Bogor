@@ -1,6 +1,6 @@
 <div class="container">
     <h1>Tambah Mata Pelajaran</h1>
-    <button class="modal-trigger waves-effect waves-light btn" href="#inputmapel">Tambah Mata pelajaran</button>
+    <a class="modal-trigger waves-effect waves-light btn" href="<?php echo base_url();?>mapel/tambah">Tambah Mata pelajaran</a>
     <table>
         <thead>
           <tr>
