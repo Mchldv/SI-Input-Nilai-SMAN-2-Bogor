@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 require_once 'Generic_model.php';
 
-class Mapel_model extends Generic_model {
+class Rapot_model extends Generic_model {
 	
 	public function __construct()
 	{
@@ -45,14 +45,6 @@ class Mapel_model extends Generic_model {
 	public function get_id ($id)
 	{
 		$this->db->where ('id', $id);
-		$query = $this->db->get('ref_mata_pelajaran');
-
-		return $query->result_array();
-	}
-
-	public function get_by_kelompok ($kelompok)
-	{
-		$this->db->where ('kelompok', $kelompok);
 		$query = $this->db->get('ref_mata_pelajaran');
 
 		return $query->result_array();
